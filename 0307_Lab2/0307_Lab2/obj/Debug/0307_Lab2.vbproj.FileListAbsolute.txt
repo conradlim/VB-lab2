@@ -1,0 +1,11 @@
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe.config
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.pdb
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.xml
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbprojResolveAssemblyReference.cache
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmLab2.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.Resources.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbproj.GenerateResource.Cache
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.exe
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.xml
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.pdb
