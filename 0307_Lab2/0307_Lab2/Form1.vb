@@ -53,27 +53,39 @@ Public Class frmLab2
         Me.Close()
 
     End Sub
-    Private Sub lblAbout_Click(sender As Object, e As EventArgs) Handles lblAbout.Click
-        pnlAbout.BringToFront()
-        pnlAbout.Visible = True
-        pnlPosts.Visible = False
-        pnlContact.Visible = False
-        FadingForm()
-    End Sub
-    Private Sub lblPosts_Click(sender As Object, e As EventArgs) Handles lblPosts.Click
-        pnlPosts.BringToFront()
-        pnlPosts.Visible = True
-        pnlAbout.Visible = False
-        pnlContact.Visible = False
-
+    Private Sub label_click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblAbout.Click, lblContact.Click,
+            lblName.Click, lblPhotos.Click, lblPosts.Click
+        Dim lblClicked = TryCast(sender, Label)
+        If lblClicked.Text = lblAbout.Text Then
+            pnlAbout.Show()
+        ElseIf lblClicked.Text = lblPosts.Text Then
+            pnlPosts.Show()
+        ElseIf lblClicked.Text = lblContact.Text Then
+            pnlContact.Show()
+        End If
     End Sub
 
-    Private Sub lblContact_Click(sender As Object, e As EventArgs) Handles lblContact.Click
-        pnlContact.BringToFront()
-        pnlContact.Visible = True
-        pnlAbout.Visible = False
-        pnlPosts.Visible = False
-    End Sub
+    'Private Sub lblAbout_Click(sender As Object, e As EventArgs) Handles lblAbout.Click
+    '    pnlAbout.BringToFront()
+    '    pnlAbout.Show()
+    '    pnlPosts.Hide()
+
+    'End Sub
+    'Private Sub lblPosts_Click(sender As Object, e As EventArgs) Handles lblPosts.Click
+
+    '    pnlPosts.Show()
+    '    pnlContact.Hide()
+    '    pnlAbout.Hide()
+
+
+    'End Sub
+
+    'Private Sub lblContact_Click(sender As Object, e As EventArgs) Handles lblContact.Click
+
+    '    pnlContact.Show()
+    '    pnlAbout.Hide()
+    '    pnlPosts.Hide()
+    'End Sub
 
 
 End Class
