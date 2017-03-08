@@ -1,0 +1,64 @@
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe.config
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.pdb
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.xml
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbprojResolveAssemblyReference.cache
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmLab2.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.Resources.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbproj.GenerateResource.Cache
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.exe
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.xml
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.pdb
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe.config
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.exe
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.xml
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.pdb
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.pdb
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.xml
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbprojResolveAssemblyReference.cache
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.Resources.resources
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbproj.GenerateResource.Cache
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmMain.resources
+C:\Users\Charlie\Downloads\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmSplash.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe.config
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.exe
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.xml
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.pdb
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.pdb
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.xml
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbprojResolveAssemblyReference.cache
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmMain.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmSplash.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.Resources.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbproj.GenerateResource.Cache
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe.config
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.exe
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.xml
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.pdb
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.pdb
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.xml
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbprojResolveAssemblyReference.cache
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmMain.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmSplash.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.Resources.resources
+C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbproj.GenerateResource.Cache
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe.config
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.exe
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.xml
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.pdb
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.exe
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.pdb
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\0307_Lab2.xml
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\Interop.WMPLib.dll
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbprojResolveAssemblyReference.cache
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\Interop.WMPLib.dll
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbproj.ResolveComReference.cache
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmMain.resources
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.frmSplash.resources
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\_0307_Lab2.Resources.resources
+C:\Users\clim16\Desktop\VB-lab2-master\0307_Lab2\0307_Lab2\obj\Debug\0307_Lab2.vbproj.GenerateResource.Cache
