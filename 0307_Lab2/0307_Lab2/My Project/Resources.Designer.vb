@@ -63,9 +63,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property cat() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cat", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property CL_profile_thumb() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("CL-profile_thumb", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property CodePlan() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CodePlan", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -96,6 +116,16 @@ Namespace My.Resources
         Friend ReadOnly Property facebook_logo_button() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("facebook-logo-button", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property flask() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("flask", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

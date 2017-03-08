@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("0307_Lab2")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyTitle("Lab 2 Assignment")>
+<Assembly: AssemblyDescription("Splash screen that leads into a Windows Form with animated objects")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("0307_Lab2")>
-<Assembly: AssemblyCopyright("Copyright ©  2017")>
+<Assembly: AssemblyProduct("Lab 2")>
+<Assembly: AssemblyCopyright("Conrad Lim and Charles Pierce - Copyright ©  2017")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

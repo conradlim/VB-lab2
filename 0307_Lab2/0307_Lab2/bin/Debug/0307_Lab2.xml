@@ -22,7 +22,17 @@
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:_0307_Lab2.My.Resources.Resources.cat">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:_0307_Lab2.My.Resources.Resources.CL_profile_thumb">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:_0307_Lab2.My.Resources.Resources.CodePlan">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -38,6 +48,11 @@
 </summary>
 </member>
 <member name="P:_0307_Lab2.My.Resources.Resources.facebook_logo_button">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:_0307_Lab2.My.Resources.Resources.flask">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
