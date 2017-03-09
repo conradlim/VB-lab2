@@ -1,4 +1,8 @@
-﻿
+﻿'   *******************************************
+'      Lab 2.2 Animate and Layering // 03.09.17
+'      Conrad Lim and Charlie Pierce
+'      Advanced Visual Basic - Prof.Flores
+'   *******************************************
 Public Class frmMain
 
     Private Sub frmLab2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -21,31 +25,6 @@ Public Class frmMain
         gp2.AddArc(r2.X + r2.Width - d2, r2.Y + r2.Height - d2, d2, d2, 0, 90)
         gp2.AddArc(r2.X, r2.Y + r2.Height - d2, d2, d2, 90, 90)
         picBCP.Region = New Region(gp)
-
-        'Dim p As New Drawing2D.GraphicsPath
-        'p.StartFigure()
-        'p.AddArc(New Rectangle(0, 0, 40, 40), 180, 90)
-        'p.AddLine(40, 0, Me.Width - 40, 0)
-        'p.AddArc(New Rectangle(picbCL.Width - 40, 0, 40, 40), -90, 90)
-        'p.AddLine(picbCL.Width, 40, picbCL.Width, picbCL.Height - 40)
-        'p.AddArc(New Rectangle(picbCL.Width - 40, picbCL.Height - 40, 40, 40), 0, 90)
-        'p.AddLine(picbCL.Width - 40, picbCL.Height, 40, picbCL.Height)
-        'p.AddArc(New Rectangle(0, picbCL.Height - 40, 40, 40), 90, 90)
-        'p.CloseFigure()
-        'picbCL.Region = New Region(p)
-
-        'Dim c As New Drawing2D.GraphicsPath
-        'c.StartFigure()
-        'c.AddArc(New Rectangle(0, 0, 40, 40), 180, 90)
-        'c.AddLine(40, 0, picBCP.Width - 40, 0)
-        'c.AddArc(New Rectangle(picBCP.Width - 40, 0, 40, 40), -90, 90)
-        'c.AddLine(picBCP.Width, 40, picBCP.Width, picBCP.Height - 40)
-        'c.AddArc(New Rectangle(picBCP.Width - 40, picBCP.Height - 40, 40, 40), 0, 90)
-        'c.AddLine(picbCL.Width - 40, picbCL.Height, 40, picbCL.Height)
-        'c.AddArc(New Rectangle(0, picBCP.Height - 40, 40, 40), 90, 90)
-        'c.CloseFigure()
-        'picBCP.Region = New Region(p)
-
 
         Me.Opacity = 0.99
 
@@ -115,14 +94,41 @@ Public Class frmMain
         pnlPosts.Hide()
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
-        pnlVideo.Show()
-        AxWindowsMediaPlayer1.URL = "C:\Users\clim16\Desktop\0\0\My Project\Multimedia\Videos\VID_21110103_002302.mp4"
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         pnlVideo.Hide()
     End Sub
+
+
+    Private Sub lblPostOne_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
+        pnlBoxPostOne.Show()
+        rtbPostOne.Text = lblPostOnePost.Text.ToString()
+
+    End Sub
+
+    Private Sub lnkPostTwo_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
+        pnlBoxTwo.Show()
+        rtbPostTwo.Text = lblPostTwoPost.Text.ToString()
+    End Sub
+
+
+    Private Sub lnkPostThree_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
+        pnlSaveToFile.Show()
+        rtbSaveToFile.Text = lblPostThreePost.Text.ToString()
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs)
+        pnlVideo.Hide()
+    End Sub
+
+    Private Sub btnOpenVid_Click(sender As Object, e As EventArgs)
+        AxWindowsMediaPlayer1.URL = ""
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        pnlVideo.Show()
+        AxWindowsMediaPlayer1.URL = "C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2.2\0307_Lab2\0307_Lab2\My Project\Multimedia\Videos\VID_21110103_002302.mp4"
+    End Sub
+
 
     Private Sub btnSavePostOne_Click(sender As Object, e As EventArgs) Handles btnSavePostOne.Click
         lblPostOnePost.Text = rtbPostOne.Text.ToString()
@@ -131,13 +137,109 @@ Public Class frmMain
         pnlBoxPostOne.Hide()
     End Sub
 
-    Private Sub lblPostOne_MouseHover(sender As Object, e As EventArgs) Handles lblPostOness.MouseHover
-
+    Private Sub btnSaveTwo_Click(sender As Object, e As EventArgs) Handles btnSaveTwo.Click
+        lblPostTwoPost.Text = rtbPostTwo.Text.ToString()
+        lblDateTwo.Text = DateAndTime.Now.ToString()
+        pnlBoxTwo.Hide()
     End Sub
 
-    Private Sub lblPostOne_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lblPostOne.LinkClicked
+    Private Sub btnSaveToFile_Click(sender As Object, e As EventArgs)
+        With SaveFileDialog1
+            .Title = "Open File"
+            .Filter = "Rich Text Files | *.rtf"
+            .DefaultExt = ".rtf"
+            .OverwritePrompt = True
+        End With
+
+        If SaveFileDialog1.ShowDialog = DialogResult.OK Then
+            rtbSaveToFile.SaveFile(SaveFileDialog1.FileName, RichTextBoxStreamType.RichText)
+        End If
+
+        lblPostThreePost.Text = rtbSaveToFile.ToString()
+        pnlSaveToFile.Hide()
+        lblDateThree.Text = DateAndTime.Now().ToString()
+    End Sub
+
+
+    Private Sub btnClose_Click_1(sender As Object, e As EventArgs)
+        pnlVideo.Hide()
+    End Sub
+
+    Private Sub btnSavePostOne_Click_1(sender As Object, e As EventArgs)
+        lblPostOnePost.Text = rtbPostOne.Text.ToString()
+        lblDateOne.Text = DateAndTime.Now.ToString()
+
+        pnlBoxPostOne.Hide()
+    End Sub
+    Private Sub btnSaveToFile_Click_1(sender As Object, e As EventArgs)
+        With SaveFileDialog1
+            .Title = "Open File"
+            .Filter = "Rich Text Files | *.rtf"
+            .DefaultExt = ".rtf"
+            .OverwritePrompt = True
+        End With
+
+        If SaveFileDialog1.ShowDialog = DialogResult.OK Then
+            rtbSaveToFile.SaveFile(SaveFileDialog1.FileName, RichTextBoxStreamType.RichText)
+        End If
+
+        lblPostThreePost.Text = rtbSaveToFile.ToString()
+        pnlSaveToFile.Hide()
+        lblDateThree.Text = DateAndTime.Now().ToString()
+    End Sub
+
+    Private Sub btnSaveTwo_Click_1(sender As Object, e As EventArgs)
+        lblPostTwoPost.Text = rtbPostTwo.Text.ToString()
+        lblDateTwo.Text = DateAndTime.Now.ToString()
+        pnlBoxTwo.Hide()
+    End Sub
+
+    Private Sub PictureBox5_Click_1(sender As Object, e As EventArgs)
+        pnlVideo.Show()
+        AxWindowsMediaPlayer1.URL = "C:\Users\clim\Documents\Visual Studio 2015\Projects\Projects\VB-lab2-master\VB-lab2.2\0307_Lab2\0307_Lab2\My Project\Multimedia\Videos\VID_21110103_002302.mp4"
+    End Sub
+
+    Private Sub lblPostOne_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lblPostOne.LinkClicked
         pnlBoxPostOne.Show()
         rtbPostOne.Text = lblPostOnePost.Text.ToString()
-
     End Sub
+
+    Private Sub lnkPostTwo_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkPostTwo.LinkClicked
+        pnlBoxTwo.Show()
+        rtbPostTwo.Text = lblPostTwoPost.Text.ToString()
+    End Sub
+
+    Private Sub lnkPostThree_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkPostThree.LinkClicked
+        pnlSaveToFile.Show()
+        rtbSaveToFile.Text = lblPostThreePost.Text.ToString()
+    End Sub
+
+    Private Sub btnOpenVid_Click_1(sender As Object, e As EventArgs) Handles btnOpenVid.Click
+        OpenFileDialog1.ShowDialog()
+        AxWindowsMediaPlayer1.URL = OpenFileDialog1.FileName
+        pnlVideo.Show()
+    End Sub
+
+    Private Sub btnSaveToFile_Click_2(sender As Object, e As EventArgs) Handles btnSaveToFile.Click
+        With SaveFileDialog1
+            .Title = "Open File"
+            .Filter = "Rich Text Files | *.rtf"
+            .DefaultExt = ".rtf"
+            .OverwritePrompt = True
+        End With
+
+        If SaveFileDialog1.ShowDialog = DialogResult.OK Then
+            rtbSaveToFile.SaveFile(SaveFileDialog1.FileName, RichTextBoxStreamType.RichText)
+        End If
+
+        lblPostThreePost.Text = rtbSaveToFile.text.ToString()
+        pnlSaveToFile.Hide()
+        lblDateThree.Text = DateAndTime.Now().ToString()
+    End Sub
+
+    Private Sub btnClose_Click_2(sender As Object, e As EventArgs) Handles btnClose.Click
+        pnlVideo.Hide()
+    End Sub
+
+
 End Class

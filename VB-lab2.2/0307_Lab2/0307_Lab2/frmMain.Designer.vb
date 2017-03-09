@@ -25,8 +25,23 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.pnlProfile = New System.Windows.Forms.Panel()
         Me.lblContactB = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.lblPhotoB = New System.Windows.Forms.Label()
+        Me.lblPostsB = New System.Windows.Forms.Label()
+        Me.lblAboutB = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
+        Me.picBCP = New System.Windows.Forms.PictureBox()
+        Me.picbCL = New System.Windows.Forms.PictureBox()
+        Me.lblContact = New System.Windows.Forms.Label()
+        Me.lblPhotos = New System.Windows.Forms.Label()
+        Me.lblPosts = New System.Windows.Forms.Label()
+        Me.lblAbout = New System.Windows.Forms.Label()
+        Me.pnlAbout = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.pnlContact = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label26 = New System.Windows.Forms.Label()
@@ -43,68 +58,57 @@ Partial Class frmMain
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.pnlPosts = New System.Windows.Forms.Panel()
+        Me.lnkPostThree = New System.Windows.Forms.LinkLabel()
+        Me.lnkPostTwo = New System.Windows.Forms.LinkLabel()
+        Me.lblPostOne = New System.Windows.Forms.LinkLabel()
+        Me.lblDateThree = New System.Windows.Forms.Label()
+        Me.lblDateTwo = New System.Windows.Forms.Label()
+        Me.lblPostTwo = New System.Windows.Forms.Label()
+        Me.lblDateOne = New System.Windows.Forms.Label()
+        Me.lblPostOness = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.pnlSaveToFile = New System.Windows.Forms.Panel()
+        Me.btnSaveToFile = New System.Windows.Forms.Button()
+        Me.rtbSaveToFile = New System.Windows.Forms.RichTextBox()
+        Me.pnlBoxTwo = New System.Windows.Forms.Panel()
+        Me.btnSaveTwo = New System.Windows.Forms.Button()
+        Me.rtbPostTwo = New System.Windows.Forms.RichTextBox()
+        Me.pnlBoxPostOne = New System.Windows.Forms.Panel()
+        Me.btnSavePostOne = New System.Windows.Forms.Button()
+        Me.rtbPostOne = New System.Windows.Forms.RichTextBox()
+        Me.lblPostOnePost = New System.Windows.Forms.Label()
+        Me.lblPostTwoPost = New System.Windows.Forms.Label()
+        Me.lblPostThreePost = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnOpenVid = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
-        Me.lblPhotoB = New System.Windows.Forms.Label()
-        Me.lblPostsB = New System.Windows.Forms.Label()
-        Me.lblAboutB = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblName = New System.Windows.Forms.Label()
-        Me.picBCP = New System.Windows.Forms.PictureBox()
-        Me.picbCL = New System.Windows.Forms.PictureBox()
-        Me.lblContact = New System.Windows.Forms.Label()
-        Me.lblPhotos = New System.Windows.Forms.Label()
-        Me.lblPosts = New System.Windows.Forms.Label()
-        Me.lblAbout = New System.Windows.Forms.Label()
-        Me.pnlContent = New System.Windows.Forms.Panel()
-        Me.pnlPosts = New System.Windows.Forms.Panel()
-        Me.lblPostOne = New System.Windows.Forms.LinkLabel()
-        Me.pnlBoxPostOne = New System.Windows.Forms.Panel()
-        Me.btnSavePostOne = New System.Windows.Forms.Button()
-        Me.rtbPostOne = New System.Windows.Forms.RichTextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.lblPostThree = New System.Windows.Forms.Label()
-        Me.lblPostThreePost = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.lblPostTwo = New System.Windows.Forms.Label()
-        Me.lblPostTwoPost = New System.Windows.Forms.Label()
-        Me.lblDateOne = New System.Windows.Forms.Label()
-        Me.lblPostOness = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.lblPostOnePost = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.pnlAbout = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.pnlVideo = New System.Windows.Forms.Panel()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.pnlProfile.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBCP, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picbCL, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlAbout.SuspendLayout()
         Me.pnlContact.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBEmail, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBCP, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picbCL, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlContent.SuspendLayout()
         Me.pnlPosts.SuspendLayout()
+        Me.pnlSaveToFile.SuspendLayout()
+        Me.pnlBoxTwo.SuspendLayout()
         Me.pnlBoxPostOne.SuspendLayout()
-        Me.pnlAbout.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlVideo.SuspendLayout()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -113,7 +117,6 @@ Partial Class frmMain
         '
         Me.pnlProfile.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.pnlProfile.Controls.Add(Me.lblContactB)
-        Me.pnlProfile.Controls.Add(Me.Panel1)
         Me.pnlProfile.Controls.Add(Me.lblPhotoB)
         Me.pnlProfile.Controls.Add(Me.lblPostsB)
         Me.pnlProfile.Controls.Add(Me.lblAboutB)
@@ -144,32 +147,187 @@ Partial Class frmMain
         Me.lblContactB.Text = "CONTACT"
         Me.lblContactB.Visible = False
         '
-        'Panel1
+        'lblPhotoB
         '
-        Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Panel1.Controls.Add(Me.PictureBox8)
-        Me.Panel1.Controls.Add(Me.pnlContact)
-        Me.Panel1.Controls.Add(Me.PictureBox7)
-        Me.Panel1.Controls.Add(Me.PictureBox6)
-        Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Controls.Add(Me.Label32)
-        Me.Panel1.Controls.Add(Me.Label36)
-        Me.Panel1.Controls.Add(Me.Label37)
-        Me.Panel1.Location = New System.Drawing.Point(396, 59)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(881, 271)
-        Me.Panel1.TabIndex = 22
-        Me.Panel1.Visible = False
+        Me.lblPhotoB.AutoSize = True
+        Me.lblPhotoB.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblPhotoB.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblPhotoB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.lblPhotoB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lblPhotoB.Location = New System.Drawing.Point(196, 187)
+        Me.lblPhotoB.Name = "lblPhotoB"
+        Me.lblPhotoB.Size = New System.Drawing.Size(93, 18)
+        Me.lblPhotoB.TabIndex = 9
+        Me.lblPhotoB.Text = "MULTI-STUFF"
+        Me.lblPhotoB.Visible = False
         '
-        'PictureBox8
+        'lblPostsB
         '
-        Me.PictureBox8.Image = Global._0307_Lab2.My.Resources.Resources.Capture__2017_03_07_20_08_08_1
-        Me.PictureBox8.Location = New System.Drawing.Point(576, 82)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(109, 103)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 27
-        Me.PictureBox8.TabStop = False
+        Me.lblPostsB.AutoSize = True
+        Me.lblPostsB.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblPostsB.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblPostsB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.lblPostsB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lblPostsB.Location = New System.Drawing.Point(119, 187)
+        Me.lblPostsB.Name = "lblPostsB"
+        Me.lblPostsB.Size = New System.Drawing.Size(51, 18)
+        Me.lblPostsB.TabIndex = 8
+        Me.lblPostsB.Text = "POSTS"
+        Me.lblPostsB.Visible = False
+        '
+        'lblAboutB
+        '
+        Me.lblAboutB.AutoSize = True
+        Me.lblAboutB.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblAboutB.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblAboutB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.lblAboutB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lblAboutB.Location = New System.Drawing.Point(35, 187)
+        Me.lblAboutB.Name = "lblAboutB"
+        Me.lblAboutB.Size = New System.Drawing.Size(57, 18)
+        Me.lblAboutB.TabIndex = 7
+        Me.lblAboutB.Text = "ABOUT"
+        Me.lblAboutB.Visible = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Light", 14.25!)
+        Me.Label1.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label1.Location = New System.Drawing.Point(184, 74)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(139, 25)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Devs In Training"
+        '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblName.Location = New System.Drawing.Point(184, 44)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(275, 28)
+        Me.lblName.TabIndex = 5
+        Me.lblName.Text = "Conrad Lim and Charles Pierce"
+        '
+        'picBCP
+        '
+        Me.picBCP.Image = Global._0307_Lab2.My.Resources.Resources.CP_profile_thumb
+        Me.picBCP.Location = New System.Drawing.Point(106, 44)
+        Me.picBCP.Name = "picBCP"
+        Me.picBCP.Size = New System.Drawing.Size(62, 67)
+        Me.picBCP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picBCP.TabIndex = 4
+        Me.picBCP.TabStop = False
+        '
+        'picbCL
+        '
+        Me.picbCL.Image = Global._0307_Lab2.My.Resources.Resources.CL_profile_thumb
+        Me.picbCL.Location = New System.Drawing.Point(38, 44)
+        Me.picbCL.Name = "picbCL"
+        Me.picbCL.Size = New System.Drawing.Size(62, 67)
+        Me.picbCL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picbCL.TabIndex = 3
+        Me.picbCL.TabStop = False
+        '
+        'lblContact
+        '
+        Me.lblContact.AutoSize = True
+        Me.lblContact.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblContact.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.lblContact.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblContact.Location = New System.Drawing.Point(307, 186)
+        Me.lblContact.Name = "lblContact"
+        Me.lblContact.Size = New System.Drawing.Size(79, 18)
+        Me.lblContact.TabIndex = 2
+        Me.lblContact.Text = "CONTACT"
+        '
+        'lblPhotos
+        '
+        Me.lblPhotos.AutoSize = True
+        Me.lblPhotos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblPhotos.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.lblPhotos.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblPhotos.Location = New System.Drawing.Point(194, 186)
+        Me.lblPhotos.Name = "lblPhotos"
+        Me.lblPhotos.Size = New System.Drawing.Size(93, 18)
+        Me.lblPhotos.TabIndex = 2
+        Me.lblPhotos.Text = "MULTI-STUFF"
+        '
+        'lblPosts
+        '
+        Me.lblPosts.AutoSize = True
+        Me.lblPosts.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblPosts.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.lblPosts.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblPosts.Location = New System.Drawing.Point(119, 186)
+        Me.lblPosts.Name = "lblPosts"
+        Me.lblPosts.Size = New System.Drawing.Size(51, 18)
+        Me.lblPosts.TabIndex = 2
+        Me.lblPosts.Text = "POSTS"
+        '
+        'lblAbout
+        '
+        Me.lblAbout.AutoSize = True
+        Me.lblAbout.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblAbout.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.lblAbout.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblAbout.Location = New System.Drawing.Point(35, 187)
+        Me.lblAbout.Name = "lblAbout"
+        Me.lblAbout.Size = New System.Drawing.Size(57, 18)
+        Me.lblAbout.TabIndex = 1
+        Me.lblAbout.Text = "ABOUT"
+        '
+        'pnlAbout
+        '
+        Me.pnlAbout.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.pnlAbout.Controls.Add(Me.Label5)
+        Me.pnlAbout.Controls.Add(Me.Label4)
+        Me.pnlAbout.Controls.Add(Me.Label3)
+        Me.pnlAbout.Controls.Add(Me.Label2)
+        Me.pnlAbout.Location = New System.Drawing.Point(34, 237)
+        Me.pnlAbout.Name = "pnlAbout"
+        Me.pnlAbout.Size = New System.Drawing.Size(881, 271)
+        Me.pnlAbout.TabIndex = 2
+        Me.pnlAbout.Visible = False
+        '
+        'Label5
+        '
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.25!)
+        Me.Label5.Location = New System.Drawing.Point(10, 166)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(855, 99)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = resources.GetString("Label5.Text")
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(18, 23)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(52, 18)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "About"
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.25!)
+        Me.Label3.Location = New System.Drawing.Point(10, 73)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(855, 99)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = resources.GetString("Label3.Text")
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(-109, 65)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(0, 13)
+        Me.Label2.TabIndex = 0
         '
         'pnlContact
         '
@@ -189,10 +347,10 @@ Partial Class frmMain
         Me.pnlContact.Controls.Add(Me.Label24)
         Me.pnlContact.Controls.Add(Me.Label25)
         Me.pnlContact.Controls.Add(Me.Label27)
-        Me.pnlContact.Location = New System.Drawing.Point(60, 40)
+        Me.pnlContact.Location = New System.Drawing.Point(32, 238)
         Me.pnlContact.Name = "pnlContact"
         Me.pnlContact.Size = New System.Drawing.Size(881, 271)
-        Me.pnlContact.TabIndex = 17
+        Me.pnlContact.TabIndex = 33
         Me.pnlContact.Visible = False
         '
         'PictureBox4
@@ -347,30 +505,287 @@ Partial Class frmMain
         Me.Label27.Size = New System.Drawing.Size(0, 13)
         Me.Label27.TabIndex = 0
         '
-        'PictureBox7
+        'pnlPosts
         '
-        Me.PictureBox7.Image = Global._0307_Lab2.My.Resources.Resources.Capture__2017_03_07_20_08_08_1
-        Me.PictureBox7.Location = New System.Drawing.Point(441, 83)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(109, 103)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox7.TabIndex = 26
-        Me.PictureBox7.TabStop = False
+        Me.pnlPosts.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.pnlPosts.Controls.Add(Me.lnkPostThree)
+        Me.pnlPosts.Controls.Add(Me.lnkPostTwo)
+        Me.pnlPosts.Controls.Add(Me.lblPostOne)
+        Me.pnlPosts.Controls.Add(Me.lblDateThree)
+        Me.pnlPosts.Controls.Add(Me.lblDateTwo)
+        Me.pnlPosts.Controls.Add(Me.lblPostTwo)
+        Me.pnlPosts.Controls.Add(Me.lblDateOne)
+        Me.pnlPosts.Controls.Add(Me.lblPostOness)
+        Me.pnlPosts.Controls.Add(Me.Label7)
+        Me.pnlPosts.Controls.Add(Me.Label9)
+        Me.pnlPosts.Controls.Add(Me.pnlSaveToFile)
+        Me.pnlPosts.Controls.Add(Me.pnlBoxTwo)
+        Me.pnlPosts.Controls.Add(Me.pnlBoxPostOne)
+        Me.pnlPosts.Controls.Add(Me.lblPostOnePost)
+        Me.pnlPosts.Controls.Add(Me.lblPostTwoPost)
+        Me.pnlPosts.Controls.Add(Me.lblPostThreePost)
+        Me.pnlPosts.Location = New System.Drawing.Point(36, 239)
+        Me.pnlPosts.Name = "pnlPosts"
+        Me.pnlPosts.Size = New System.Drawing.Size(881, 271)
+        Me.pnlPosts.TabIndex = 37
+        Me.pnlPosts.Visible = False
         '
-        'PictureBox6
+        'lnkPostThree
         '
-        Me.PictureBox6.Image = Global._0307_Lab2.My.Resources.Resources.Capture__2017_03_07_20_08_08_1
-        Me.PictureBox6.Location = New System.Drawing.Point(303, 82)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(109, 103)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 25
-        Me.PictureBox6.TabStop = False
+        Me.lnkPostThree.AutoSize = True
+        Me.lnkPostThree.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lnkPostThree.ForeColor = System.Drawing.Color.DarkBlue
+        Me.lnkPostThree.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.lnkPostThree.LinkColor = System.Drawing.Color.DarkBlue
+        Me.lnkPostThree.Location = New System.Drawing.Point(18, 193)
+        Me.lnkPostThree.Name = "lnkPostThree"
+        Me.lnkPostThree.Size = New System.Drawing.Size(82, 17)
+        Me.lnkPostThree.TabIndex = 18
+        Me.lnkPostThree.TabStop = True
+        Me.lnkPostThree.Text = "Save To File"
+        '
+        'lnkPostTwo
+        '
+        Me.lnkPostTwo.AutoSize = True
+        Me.lnkPostTwo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lnkPostTwo.ForeColor = System.Drawing.Color.DarkBlue
+        Me.lnkPostTwo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.lnkPostTwo.LinkColor = System.Drawing.Color.DarkBlue
+        Me.lnkPostTwo.Location = New System.Drawing.Point(15, 128)
+        Me.lnkPostTwo.Name = "lnkPostTwo"
+        Me.lnkPostTwo.Size = New System.Drawing.Size(136, 17)
+        Me.lnkPostTwo.TabIndex = 17
+        Me.lnkPostTwo.TabStop = True
+        Me.lnkPostTwo.Text = "Update My Post Two"
+        '
+        'lblPostOne
+        '
+        Me.lblPostOne.AutoSize = True
+        Me.lblPostOne.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblPostOne.ForeColor = System.Drawing.Color.DarkBlue
+        Me.lblPostOne.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.lblPostOne.LinkColor = System.Drawing.Color.DarkBlue
+        Me.lblPostOne.Location = New System.Drawing.Point(19, 61)
+        Me.lblPostOne.Name = "lblPostOne"
+        Me.lblPostOne.Size = New System.Drawing.Size(106, 17)
+        Me.lblPostOne.TabIndex = 16
+        Me.lblPostOne.TabStop = True
+        Me.lblPostOne.Text = "Update My Post"
+        '
+        'lblDateThree
+        '
+        Me.lblDateThree.AutoSize = True
+        Me.lblDateThree.Font = New System.Drawing.Font("Segoe UI Light", 8.25!)
+        Me.lblDateThree.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lblDateThree.Location = New System.Drawing.Point(746, 195)
+        Me.lblDateThree.Name = "lblDateThree"
+        Me.lblDateThree.Size = New System.Drawing.Size(113, 13)
+        Me.lblDateThree.TabIndex = 13
+        Me.lblDateThree.Text = "1/1/2017 12:01:00 AM"
+        '
+        'lblDateTwo
+        '
+        Me.lblDateTwo.AutoSize = True
+        Me.lblDateTwo.Font = New System.Drawing.Font("Segoe UI Light", 8.25!)
+        Me.lblDateTwo.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lblDateTwo.Location = New System.Drawing.Point(748, 129)
+        Me.lblDateTwo.Name = "lblDateTwo"
+        Me.lblDateTwo.Size = New System.Drawing.Size(107, 13)
+        Me.lblDateTwo.TabIndex = 10
+        Me.lblDateTwo.Text = "2/1/2017 7:45:35 AM"
+        '
+        'lblPostTwo
+        '
+        Me.lblPostTwo.AutoSize = True
+        Me.lblPostTwo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPostTwo.ForeColor = System.Drawing.Color.DarkBlue
+        Me.lblPostTwo.Location = New System.Drawing.Point(16, 128)
+        Me.lblPostTwo.Name = "lblPostTwo"
+        Me.lblPostTwo.Size = New System.Drawing.Size(102, 17)
+        Me.lblPostTwo.TabIndex = 9
+        Me.lblPostTwo.Text = "Smooth Sailing"
+        '
+        'lblDateOne
+        '
+        Me.lblDateOne.AutoSize = True
+        Me.lblDateOne.Font = New System.Drawing.Font("Segoe UI Light", 8.25!)
+        Me.lblDateOne.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lblDateOne.Location = New System.Drawing.Point(749, 62)
+        Me.lblDateOne.Name = "lblDateOne"
+        Me.lblDateOne.Size = New System.Drawing.Size(112, 13)
+        Me.lblDateOne.TabIndex = 7
+        Me.lblDateOne.Text = "3/1/2017 10:21:02 PM"
+        '
+        'lblPostOness
+        '
+        Me.lblPostOness.AutoSize = True
+        Me.lblPostOness.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPostOness.ForeColor = System.Drawing.Color.DarkBlue
+        Me.lblPostOness.Location = New System.Drawing.Point(17, 61)
+        Me.lblPostOness.Name = "lblPostOness"
+        Me.lblPostOness.Size = New System.Drawing.Size(104, 17)
+        Me.lblPostOness.TabIndex = 7
+        Me.lblPostOness.Text = "March Madness"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(18, 22)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(42, 18)
+        Me.Label7.TabIndex = 3
+        Me.Label7.Text = "Posts"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(-109, 65)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(0, 13)
+        Me.Label9.TabIndex = 0
+        '
+        'pnlSaveToFile
+        '
+        Me.pnlSaveToFile.Controls.Add(Me.btnSaveToFile)
+        Me.pnlSaveToFile.Controls.Add(Me.rtbSaveToFile)
+        Me.pnlSaveToFile.Location = New System.Drawing.Point(242, 4)
+        Me.pnlSaveToFile.Name = "pnlSaveToFile"
+        Me.pnlSaveToFile.Size = New System.Drawing.Size(337, 240)
+        Me.pnlSaveToFile.TabIndex = 31
+        Me.pnlSaveToFile.Visible = False
+        '
+        'btnSaveToFile
+        '
+        Me.btnSaveToFile.AutoEllipsis = True
+        Me.btnSaveToFile.Location = New System.Drawing.Point(248, 214)
+        Me.btnSaveToFile.Name = "btnSaveToFile"
+        Me.btnSaveToFile.Size = New System.Drawing.Size(75, 23)
+        Me.btnSaveToFile.TabIndex = 16
+        Me.btnSaveToFile.Text = "SAVE"
+        Me.btnSaveToFile.UseVisualStyleBackColor = True
+        '
+        'rtbSaveToFile
+        '
+        Me.rtbSaveToFile.Location = New System.Drawing.Point(14, 20)
+        Me.rtbSaveToFile.Name = "rtbSaveToFile"
+        Me.rtbSaveToFile.Size = New System.Drawing.Size(309, 166)
+        Me.rtbSaveToFile.TabIndex = 15
+        Me.rtbSaveToFile.Text = ""
+        '
+        'pnlBoxTwo
+        '
+        Me.pnlBoxTwo.Controls.Add(Me.btnSaveTwo)
+        Me.pnlBoxTwo.Controls.Add(Me.rtbPostTwo)
+        Me.pnlBoxTwo.Location = New System.Drawing.Point(246, 4)
+        Me.pnlBoxTwo.Name = "pnlBoxTwo"
+        Me.pnlBoxTwo.Size = New System.Drawing.Size(337, 240)
+        Me.pnlBoxTwo.TabIndex = 29
+        Me.pnlBoxTwo.Visible = False
+        '
+        'btnSaveTwo
+        '
+        Me.btnSaveTwo.AutoEllipsis = True
+        Me.btnSaveTwo.Location = New System.Drawing.Point(248, 211)
+        Me.btnSaveTwo.Name = "btnSaveTwo"
+        Me.btnSaveTwo.Size = New System.Drawing.Size(75, 23)
+        Me.btnSaveTwo.TabIndex = 16
+        Me.btnSaveTwo.Text = "SAVE"
+        Me.btnSaveTwo.UseVisualStyleBackColor = True
+        '
+        'rtbPostTwo
+        '
+        Me.rtbPostTwo.Location = New System.Drawing.Point(14, 20)
+        Me.rtbPostTwo.Name = "rtbPostTwo"
+        Me.rtbPostTwo.Size = New System.Drawing.Size(309, 166)
+        Me.rtbPostTwo.TabIndex = 15
+        Me.rtbPostTwo.Text = ""
+        '
+        'pnlBoxPostOne
+        '
+        Me.pnlBoxPostOne.Controls.Add(Me.btnSavePostOne)
+        Me.pnlBoxPostOne.Controls.Add(Me.rtbPostOne)
+        Me.pnlBoxPostOne.Location = New System.Drawing.Point(238, 0)
+        Me.pnlBoxPostOne.Name = "pnlBoxPostOne"
+        Me.pnlBoxPostOne.Size = New System.Drawing.Size(346, 261)
+        Me.pnlBoxPostOne.TabIndex = 30
+        Me.pnlBoxPostOne.Visible = False
+        '
+        'btnSavePostOne
+        '
+        Me.btnSavePostOne.AutoEllipsis = True
+        Me.btnSavePostOne.Location = New System.Drawing.Point(248, 214)
+        Me.btnSavePostOne.Name = "btnSavePostOne"
+        Me.btnSavePostOne.Size = New System.Drawing.Size(75, 23)
+        Me.btnSavePostOne.TabIndex = 16
+        Me.btnSavePostOne.Text = "SAVE"
+        Me.btnSavePostOne.UseVisualStyleBackColor = True
+        '
+        'rtbPostOne
+        '
+        Me.rtbPostOne.Location = New System.Drawing.Point(14, 20)
+        Me.rtbPostOne.Name = "rtbPostOne"
+        Me.rtbPostOne.Size = New System.Drawing.Size(309, 166)
+        Me.rtbPostOne.TabIndex = 15
+        Me.rtbPostOne.Text = ""
+        '
+        'lblPostOnePost
+        '
+        Me.lblPostOnePost.Font = New System.Drawing.Font("Century Gothic", 9.25!)
+        Me.lblPostOnePost.Location = New System.Drawing.Point(39, 81)
+        Me.lblPostOnePost.Name = "lblPostOnePost"
+        Me.lblPostOnePost.Size = New System.Drawing.Size(826, 44)
+        Me.lblPostOnePost.TabIndex = 2
+        Me.lblPostOnePost.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem " &
+    "Ipsum has been the industry's standard dummy text ever since the 1500s.." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'lblPostTwoPost
+        '
+        Me.lblPostTwoPost.Font = New System.Drawing.Font("Century Gothic", 9.25!)
+        Me.lblPostTwoPost.Location = New System.Drawing.Point(38, 148)
+        Me.lblPostTwoPost.Name = "lblPostTwoPost"
+        Me.lblPostTwoPost.Size = New System.Drawing.Size(826, 44)
+        Me.lblPostTwoPost.TabIndex = 8
+        Me.lblPostTwoPost.Text = resources.GetString("lblPostTwoPost.Text")
+        '
+        'lblPostThreePost
+        '
+        Me.lblPostThreePost.Font = New System.Drawing.Font("Century Gothic", 9.25!)
+        Me.lblPostThreePost.Location = New System.Drawing.Point(36, 212)
+        Me.lblPostThreePost.Name = "lblPostThreePost"
+        Me.lblPostThreePost.Size = New System.Drawing.Size(826, 44)
+        Me.lblPostThreePost.TabIndex = 11
+        Me.lblPostThreePost.Text = "So we start a new year in 2017.  New Shoes,clothes..."
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel1.Controls.Add(Me.btnOpenVid)
+        Me.Panel1.Controls.Add(Me.PictureBox5)
+        Me.Panel1.Controls.Add(Me.Label32)
+        Me.Panel1.Controls.Add(Me.Label36)
+        Me.Panel1.Controls.Add(Me.Label37)
+        Me.Panel1.Location = New System.Drawing.Point(35, 241)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(881, 271)
+        Me.Panel1.TabIndex = 38
+        Me.Panel1.Visible = False
+        '
+        'btnOpenVid
+        '
+        Me.btnOpenVid.Location = New System.Drawing.Point(635, 237)
+        Me.btnOpenVid.Name = "btnOpenVid"
+        Me.btnOpenVid.Size = New System.Drawing.Size(75, 23)
+        Me.btnOpenVid.TabIndex = 17
+        Me.btnOpenVid.Text = "OPEN"
+        Me.btnOpenVid.UseVisualStyleBackColor = True
         '
         'PictureBox5
         '
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox5.Image = Global._0307_Lab2.My.Resources.Resources.Capture__2017_03_07_20_08_08_1
-        Me.PictureBox5.Location = New System.Drawing.Point(168, 82)
+        Me.PictureBox5.Location = New System.Drawing.Point(338, 87)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(109, 103)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -407,374 +822,9 @@ Partial Class frmMain
         Me.Label37.Size = New System.Drawing.Size(0, 13)
         Me.Label37.TabIndex = 0
         '
-        'lblPhotoB
+        'OpenFileDialog1
         '
-        Me.lblPhotoB.AutoSize = True
-        Me.lblPhotoB.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPhotoB.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblPhotoB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.lblPhotoB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblPhotoB.Location = New System.Drawing.Point(196, 187)
-        Me.lblPhotoB.Name = "lblPhotoB"
-        Me.lblPhotoB.Size = New System.Drawing.Size(93, 18)
-        Me.lblPhotoB.TabIndex = 9
-        Me.lblPhotoB.Text = "MULTI-STUFF"
-        Me.lblPhotoB.Visible = False
-        '
-        'lblPostsB
-        '
-        Me.lblPostsB.AutoSize = True
-        Me.lblPostsB.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPostsB.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblPostsB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.lblPostsB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblPostsB.Location = New System.Drawing.Point(119, 187)
-        Me.lblPostsB.Name = "lblPostsB"
-        Me.lblPostsB.Size = New System.Drawing.Size(51, 18)
-        Me.lblPostsB.TabIndex = 8
-        Me.lblPostsB.Text = "POSTS"
-        Me.lblPostsB.Visible = False
-        '
-        'lblAboutB
-        '
-        Me.lblAboutB.AutoSize = True
-        Me.lblAboutB.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblAboutB.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblAboutB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.lblAboutB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblAboutB.Location = New System.Drawing.Point(35, 187)
-        Me.lblAboutB.Name = "lblAboutB"
-        Me.lblAboutB.Size = New System.Drawing.Size(57, 18)
-        Me.lblAboutB.TabIndex = 7
-        Me.lblAboutB.Text = "ABOUT"
-        Me.lblAboutB.Visible = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Light", 14.25!)
-        Me.Label1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label1.Location = New System.Drawing.Point(184, 74)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(136, 25)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Devs In Training"
-        '
-        'lblName
-        '
-        Me.lblName.AutoSize = True
-        Me.lblName.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblName.Location = New System.Drawing.Point(184, 44)
-        Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(275, 28)
-        Me.lblName.TabIndex = 5
-        Me.lblName.Text = "Conrad Lim and Charles Pierce"
-        '
-        'picBCP
-        '
-        Me.picBCP.Image = Global._0307_Lab2.My.Resources.Resources.CP_profile_thumb
-        Me.picBCP.Location = New System.Drawing.Point(106, 44)
-        Me.picBCP.Name = "picBCP"
-        Me.picBCP.Size = New System.Drawing.Size(62, 67)
-        Me.picBCP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picBCP.TabIndex = 4
-        Me.picBCP.TabStop = False
-        '
-        'picbCL
-        '
-        Me.picbCL.Image = Global._0307_Lab2.My.Resources.Resources.CL_profile_thumb
-        Me.picbCL.Location = New System.Drawing.Point(38, 44)
-        Me.picbCL.Name = "picbCL"
-        Me.picbCL.Size = New System.Drawing.Size(62, 67)
-        Me.picbCL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picbCL.TabIndex = 3
-        Me.picbCL.TabStop = False
-        '
-        'lblContact
-        '
-        Me.lblContact.AutoSize = True
-        Me.lblContact.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblContact.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.lblContact.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblContact.Location = New System.Drawing.Point(307, 186)
-        Me.lblContact.Name = "lblContact"
-        Me.lblContact.Size = New System.Drawing.Size(79, 18)
-        Me.lblContact.TabIndex = 2
-        Me.lblContact.Text = "CONTACT"
-        '
-        'lblPhotos
-        '
-        Me.lblPhotos.AutoSize = True
-        Me.lblPhotos.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblPhotos.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.lblPhotos.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPhotos.Location = New System.Drawing.Point(194, 186)
-        Me.lblPhotos.Name = "lblPhotos"
-        Me.lblPhotos.Size = New System.Drawing.Size(93, 18)
-        Me.lblPhotos.TabIndex = 2
-        Me.lblPhotos.Text = "MULTI-STUFF"
-        '
-        'lblPosts
-        '
-        Me.lblPosts.AutoSize = True
-        Me.lblPosts.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblPosts.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.lblPosts.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPosts.Location = New System.Drawing.Point(119, 186)
-        Me.lblPosts.Name = "lblPosts"
-        Me.lblPosts.Size = New System.Drawing.Size(51, 18)
-        Me.lblPosts.TabIndex = 2
-        Me.lblPosts.Text = "POSTS"
-        '
-        'lblAbout
-        '
-        Me.lblAbout.AutoSize = True
-        Me.lblAbout.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblAbout.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.lblAbout.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblAbout.Location = New System.Drawing.Point(35, 187)
-        Me.lblAbout.Name = "lblAbout"
-        Me.lblAbout.Size = New System.Drawing.Size(57, 18)
-        Me.lblAbout.TabIndex = 1
-        Me.lblAbout.Text = "ABOUT"
-        '
-        'pnlContent
-        '
-        Me.pnlContent.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.pnlContent.Controls.Add(Me.pnlPosts)
-        Me.pnlContent.Controls.Add(Me.pnlAbout)
-        Me.pnlContent.Location = New System.Drawing.Point(28, 230)
-        Me.pnlContent.Name = "pnlContent"
-        Me.pnlContent.Size = New System.Drawing.Size(881, 271)
-        Me.pnlContent.TabIndex = 1
-        '
-        'pnlPosts
-        '
-        Me.pnlPosts.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.pnlPosts.Controls.Add(Me.lblPostOne)
-        Me.pnlPosts.Controls.Add(Me.pnlBoxPostOne)
-        Me.pnlPosts.Controls.Add(Me.Label14)
-        Me.pnlPosts.Controls.Add(Me.lblPostThree)
-        Me.pnlPosts.Controls.Add(Me.lblPostThreePost)
-        Me.pnlPosts.Controls.Add(Me.Label6)
-        Me.pnlPosts.Controls.Add(Me.lblPostTwo)
-        Me.pnlPosts.Controls.Add(Me.lblPostTwoPost)
-        Me.pnlPosts.Controls.Add(Me.lblDateOne)
-        Me.pnlPosts.Controls.Add(Me.lblPostOness)
-        Me.pnlPosts.Controls.Add(Me.Label7)
-        Me.pnlPosts.Controls.Add(Me.lblPostOnePost)
-        Me.pnlPosts.Controls.Add(Me.Label9)
-        Me.pnlPosts.Location = New System.Drawing.Point(2, 0)
-        Me.pnlPosts.Name = "pnlPosts"
-        Me.pnlPosts.Size = New System.Drawing.Size(881, 271)
-        Me.pnlPosts.TabIndex = 5
-        Me.pnlPosts.Visible = False
-        '
-        'lblPostOne
-        '
-        Me.lblPostOne.AutoSize = True
-        Me.lblPostOne.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblPostOne.ForeColor = System.Drawing.Color.DarkBlue
-        Me.lblPostOne.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lblPostOne.LinkColor = System.Drawing.Color.DarkBlue
-        Me.lblPostOne.Location = New System.Drawing.Point(19, 61)
-        Me.lblPostOne.Name = "lblPostOne"
-        Me.lblPostOne.Size = New System.Drawing.Size(104, 17)
-        Me.lblPostOne.TabIndex = 16
-        Me.lblPostOne.TabStop = True
-        Me.lblPostOne.Text = "March Madness"
-        '
-        'pnlBoxPostOne
-        '
-        Me.pnlBoxPostOne.Controls.Add(Me.btnSavePostOne)
-        Me.pnlBoxPostOne.Controls.Add(Me.rtbPostOne)
-        Me.pnlBoxPostOne.Location = New System.Drawing.Point(245, 16)
-        Me.pnlBoxPostOne.Name = "pnlBoxPostOne"
-        Me.pnlBoxPostOne.Size = New System.Drawing.Size(337, 240)
-        Me.pnlBoxPostOne.TabIndex = 15
-        Me.pnlBoxPostOne.Visible = False
-        '
-        'btnSavePostOne
-        '
-        Me.btnSavePostOne.AutoEllipsis = True
-        Me.btnSavePostOne.Location = New System.Drawing.Point(248, 214)
-        Me.btnSavePostOne.Name = "btnSavePostOne"
-        Me.btnSavePostOne.Size = New System.Drawing.Size(75, 23)
-        Me.btnSavePostOne.TabIndex = 16
-        Me.btnSavePostOne.Text = "SAVE"
-        Me.btnSavePostOne.UseVisualStyleBackColor = True
-        '
-        'rtbPostOne
-        '
-        Me.rtbPostOne.Location = New System.Drawing.Point(14, 20)
-        Me.rtbPostOne.Name = "rtbPostOne"
-        Me.rtbPostOne.Size = New System.Drawing.Size(309, 166)
-        Me.rtbPostOne.TabIndex = 15
-        Me.rtbPostOne.Text = ""
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Segoe UI Light", 8.25!)
-        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label14.Location = New System.Drawing.Point(746, 195)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(56, 13)
-        Me.Label14.TabIndex = 13
-        Me.Label14.Text = "01/01/2017"
-        '
-        'lblPostThree
-        '
-        Me.lblPostThree.AutoSize = True
-        Me.lblPostThree.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPostThree.ForeColor = System.Drawing.Color.DarkBlue
-        Me.lblPostThree.Location = New System.Drawing.Point(14, 192)
-        Me.lblPostThree.Name = "lblPostThree"
-        Me.lblPostThree.Size = New System.Drawing.Size(109, 17)
-        Me.lblPostThree.TabIndex = 12
-        Me.lblPostThree.Text = "Happy New Year"
-        '
-        'lblPostThreePost
-        '
-        Me.lblPostThreePost.Font = New System.Drawing.Font("Century Gothic", 9.25!)
-        Me.lblPostThreePost.Location = New System.Drawing.Point(36, 212)
-        Me.lblPostThreePost.Name = "lblPostThreePost"
-        Me.lblPostThreePost.Size = New System.Drawing.Size(826, 44)
-        Me.lblPostThreePost.TabIndex = 11
-        Me.lblPostThreePost.Text = "So we start a new year in 2017.  New Shoes,clothes..."
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 8.25!)
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label6.Location = New System.Drawing.Point(748, 129)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(58, 13)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "02/01/2017"
-        '
-        'lblPostTwo
-        '
-        Me.lblPostTwo.AutoSize = True
-        Me.lblPostTwo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPostTwo.ForeColor = System.Drawing.Color.DarkBlue
-        Me.lblPostTwo.Location = New System.Drawing.Point(16, 128)
-        Me.lblPostTwo.Name = "lblPostTwo"
-        Me.lblPostTwo.Size = New System.Drawing.Size(102, 17)
-        Me.lblPostTwo.TabIndex = 9
-        Me.lblPostTwo.Text = "Smooth Sailing"
-        '
-        'lblPostTwoPost
-        '
-        Me.lblPostTwoPost.Font = New System.Drawing.Font("Century Gothic", 9.25!)
-        Me.lblPostTwoPost.Location = New System.Drawing.Point(38, 148)
-        Me.lblPostTwoPost.Name = "lblPostTwoPost"
-        Me.lblPostTwoPost.Size = New System.Drawing.Size(826, 44)
-        Me.lblPostTwoPost.TabIndex = 8
-        Me.lblPostTwoPost.Text = resources.GetString("lblPostTwoPost.Text")
-        '
-        'lblDateOne
-        '
-        Me.lblDateOne.AutoSize = True
-        Me.lblDateOne.Font = New System.Drawing.Font("Segoe UI Light", 8.25!)
-        Me.lblDateOne.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblDateOne.Location = New System.Drawing.Point(749, 62)
-        Me.lblDateOne.Name = "lblDateOne"
-        Me.lblDateOne.Size = New System.Drawing.Size(58, 13)
-        Me.lblDateOne.TabIndex = 7
-        Me.lblDateOne.Text = "03/01/2017"
-        '
-        'lblPostOness
-        '
-        Me.lblPostOness.AutoSize = True
-        Me.lblPostOness.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPostOness.ForeColor = System.Drawing.Color.DarkBlue
-        Me.lblPostOness.Location = New System.Drawing.Point(17, 61)
-        Me.lblPostOness.Name = "lblPostOness"
-        Me.lblPostOness.Size = New System.Drawing.Size(104, 17)
-        Me.lblPostOness.TabIndex = 7
-        Me.lblPostOness.Text = "March Madness"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(18, 22)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(42, 18)
-        Me.Label7.TabIndex = 3
-        Me.Label7.Text = "Posts"
-        '
-        'lblPostOnePost
-        '
-        Me.lblPostOnePost.Font = New System.Drawing.Font("Century Gothic", 9.25!)
-        Me.lblPostOnePost.Location = New System.Drawing.Point(39, 81)
-        Me.lblPostOnePost.Name = "lblPostOnePost"
-        Me.lblPostOnePost.Size = New System.Drawing.Size(826, 44)
-        Me.lblPostOnePost.TabIndex = 2
-        Me.lblPostOnePost.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem " &
-    "Ipsum has been the industry's standard dummy text ever since the 1500s.." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(-109, 65)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(0, 13)
-        Me.Label9.TabIndex = 0
-        '
-        'pnlAbout
-        '
-        Me.pnlAbout.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.pnlAbout.Controls.Add(Me.Label5)
-        Me.pnlAbout.Controls.Add(Me.Label4)
-        Me.pnlAbout.Controls.Add(Me.Label3)
-        Me.pnlAbout.Controls.Add(Me.Label2)
-        Me.pnlAbout.Location = New System.Drawing.Point(-1, 1)
-        Me.pnlAbout.Name = "pnlAbout"
-        Me.pnlAbout.Size = New System.Drawing.Size(881, 271)
-        Me.pnlAbout.TabIndex = 2
-        Me.pnlAbout.Visible = False
-        '
-        'Label5
-        '
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.25!)
-        Me.Label5.Location = New System.Drawing.Point(10, 166)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(855, 99)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = resources.GetString("Label5.Text")
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(18, 23)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(52, 18)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "About"
-        '
-        'Label3
-        '
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.25!)
-        Me.Label3.Location = New System.Drawing.Point(10, 73)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(855, 99)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = resources.GetString("Label3.Text")
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(-109, 65)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(0, 13)
-        Me.Label2.TabIndex = 0
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'pnlVideo
         '
@@ -783,10 +833,10 @@ Partial Class frmMain
         Me.pnlVideo.Controls.Add(Me.AxWindowsMediaPlayer1)
         Me.pnlVideo.Controls.Add(Me.Label31)
         Me.pnlVideo.Controls.Add(Me.Label33)
-        Me.pnlVideo.Location = New System.Drawing.Point(69, 508)
+        Me.pnlVideo.Location = New System.Drawing.Point(37, 239)
         Me.pnlVideo.Name = "pnlVideo"
         Me.pnlVideo.Size = New System.Drawing.Size(881, 271)
-        Me.pnlVideo.TabIndex = 27
+        Me.pnlVideo.TabIndex = 39
         Me.pnlVideo.Visible = False
         '
         'btnClose
@@ -833,9 +883,12 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(944, 760)
+        Me.Controls.Add(Me.pnlPosts)
         Me.Controls.Add(Me.pnlVideo)
-        Me.Controls.Add(Me.pnlContent)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pnlProfile)
+        Me.Controls.Add(Me.pnlContact)
+        Me.Controls.Add(Me.pnlAbout)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(960, 900)
@@ -846,9 +899,10 @@ Partial Class frmMain
         Me.Text = "Hello World"
         Me.pnlProfile.ResumeLayout(False)
         Me.pnlProfile.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBCP, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picbCL, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlAbout.ResumeLayout(False)
+        Me.pnlAbout.PerformLayout()
         Me.pnlContact.ResumeLayout(False)
         Me.pnlContact.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -856,17 +910,14 @@ Partial Class frmMain
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picBEmail, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBCP, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picbCL, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlContent.ResumeLayout(False)
         Me.pnlPosts.ResumeLayout(False)
         Me.pnlPosts.PerformLayout()
+        Me.pnlSaveToFile.ResumeLayout(False)
+        Me.pnlBoxTwo.ResumeLayout(False)
         Me.pnlBoxPostOne.ResumeLayout(False)
-        Me.pnlAbout.ResumeLayout(False)
-        Me.pnlAbout.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlVideo.ResumeLayout(False)
         Me.pnlVideo.PerformLayout()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -883,24 +934,11 @@ Partial Class frmMain
     Friend WithEvents picBCP As PictureBox
     Friend WithEvents lblName As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents pnlContent As Panel
     Friend WithEvents pnlAbout As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents pnlPosts As Panel
-    Friend WithEvents Label7 As Label
-    Friend WithEvents lblPostOnePost As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents lblPostOness As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents lblPostTwo As Label
-    Friend WithEvents lblPostTwoPost As Label
-    Friend WithEvents lblDateOne As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents lblPostThree As Label
-    Friend WithEvents lblPostThreePost As Label
     Friend WithEvents lblPostsB As Label
     Friend WithEvents lblAboutB As Label
     Friend WithEvents lblPhotoB As Label
@@ -921,21 +959,40 @@ Partial Class frmMain
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents Label27 As Label
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
+    Friend WithEvents pnlPosts As Panel
+    Friend WithEvents pnlBoxPostOne As Panel
+    Friend WithEvents btnSavePostOne As Button
+    Friend WithEvents rtbPostOne As RichTextBox
+    Friend WithEvents pnlBoxTwo As Panel
+    Friend WithEvents btnSaveTwo As Button
+    Friend WithEvents rtbPostTwo As RichTextBox
+    Friend WithEvents pnlSaveToFile As Panel
+    Friend WithEvents btnSaveToFile As Button
+    Friend WithEvents rtbSaveToFile As RichTextBox
+    Friend WithEvents lnkPostThree As LinkLabel
+    Friend WithEvents lnkPostTwo As LinkLabel
+    Friend WithEvents lblPostOne As LinkLabel
+    Friend WithEvents lblDateThree As Label
+    Friend WithEvents lblPostThreePost As Label
+    Friend WithEvents lblDateTwo As Label
+    Friend WithEvents lblPostTwo As Label
+    Friend WithEvents lblPostTwoPost As Label
+    Friend WithEvents lblDateOne As Label
+    Friend WithEvents lblPostOness As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents lblPostOnePost As Label
+    Friend WithEvents Label9 As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnOpenVid As Button
+    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label32 As Label
     Friend WithEvents Label36 As Label
     Friend WithEvents Label37 As Label
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents pnlVideo As Panel
     Friend WithEvents btnClose As Button
     Friend WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
     Friend WithEvents Label31 As Label
     Friend WithEvents Label33 As Label
-    Friend WithEvents pnlBoxPostOne As Panel
-    Friend WithEvents btnSavePostOne As Button
-    Friend WithEvents rtbPostOne As RichTextBox
-    Friend WithEvents lblPostOne As LinkLabel
 End Class
