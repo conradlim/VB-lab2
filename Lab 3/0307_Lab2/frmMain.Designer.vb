@@ -52,6 +52,9 @@ Partial Class frmMain
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.pnlMultimedia = New System.Windows.Forms.Panel()
+        Me.btnAudioTerminator = New System.Windows.Forms.Button()
+        Me.btnAudioPacino = New System.Windows.Forms.Button()
+        Me.btnAudioOffer = New System.Windows.Forms.Button()
         Me.btnAudioWelcome = New System.Windows.Forms.Button()
         Me.lblAudioPlayer = New System.Windows.Forms.Label()
         Me.btnCloseMedia = New System.Windows.Forms.Button()
@@ -85,9 +88,6 @@ Partial Class frmMain
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.OpenFileDialogAudio = New System.Windows.Forms.OpenFileDialog()
-        Me.btnAudioOffer = New System.Windows.Forms.Button()
-        Me.btnAudioPacino = New System.Windows.Forms.Button()
-        Me.btnAudioTerminator = New System.Windows.Forms.Button()
         Me.picBCP = New System.Windows.Forms.PictureBox()
         Me.picbCL = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -128,10 +128,9 @@ Partial Class frmMain
         Me.pnlProfile.Controls.Add(Me.lblMultimedia)
         Me.pnlProfile.Controls.Add(Me.lblTextA)
         Me.pnlProfile.Controls.Add(Me.lblAbout)
-        Me.pnlProfile.Location = New System.Drawing.Point(3, 2)
-        Me.pnlProfile.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlProfile.Location = New System.Drawing.Point(2, 2)
         Me.pnlProfile.Name = "pnlProfile"
-        Me.pnlProfile.Size = New System.Drawing.Size(1265, 252)
+        Me.pnlProfile.Size = New System.Drawing.Size(949, 205)
         Me.pnlProfile.TabIndex = 0
         '
         'lblContactB
@@ -141,10 +140,9 @@ Partial Class frmMain
         Me.lblContactB.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblContactB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblContactB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblContactB.Location = New System.Drawing.Point(409, 230)
-        Me.lblContactB.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblContactB.Location = New System.Drawing.Point(307, 187)
         Me.lblContactB.Name = "lblContactB"
-        Me.lblContactB.Size = New System.Drawing.Size(100, 23)
+        Me.lblContactB.Size = New System.Drawing.Size(79, 18)
         Me.lblContactB.TabIndex = 10
         Me.lblContactB.Text = "CONTACT"
         Me.lblContactB.Visible = False
@@ -156,10 +154,9 @@ Partial Class frmMain
         Me.lblMultiMediaB.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblMultiMediaB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblMultiMediaB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblMultiMediaB.Location = New System.Drawing.Point(259, 229)
-        Me.lblMultiMediaB.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMultiMediaB.Location = New System.Drawing.Point(194, 186)
         Me.lblMultiMediaB.Name = "lblMultiMediaB"
-        Me.lblMultiMediaB.Size = New System.Drawing.Size(120, 23)
+        Me.lblMultiMediaB.Size = New System.Drawing.Size(97, 18)
         Me.lblMultiMediaB.TabIndex = 9
         Me.lblMultiMediaB.Text = "MULTIMEDIA" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.lblMultiMediaB.Visible = False
@@ -171,10 +168,9 @@ Partial Class frmMain
         Me.lblTextB.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblTextB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblTextB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblTextB.Location = New System.Drawing.Point(159, 229)
-        Me.lblTextB.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTextB.Location = New System.Drawing.Point(119, 186)
         Me.lblTextB.Name = "lblTextB"
-        Me.lblTextB.Size = New System.Drawing.Size(49, 23)
+        Me.lblTextB.Size = New System.Drawing.Size(38, 18)
         Me.lblTextB.TabIndex = 8
         Me.lblTextB.Text = "TEXT"
         Me.lblTextB.Visible = False
@@ -186,10 +182,9 @@ Partial Class frmMain
         Me.lblAboutB.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblAboutB.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblAboutB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblAboutB.Location = New System.Drawing.Point(47, 230)
-        Me.lblAboutB.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAboutB.Location = New System.Drawing.Point(35, 187)
         Me.lblAboutB.Name = "lblAboutB"
-        Me.lblAboutB.Size = New System.Drawing.Size(72, 23)
+        Me.lblAboutB.Size = New System.Drawing.Size(57, 18)
         Me.lblAboutB.TabIndex = 7
         Me.lblAboutB.Text = "ABOUT"
         Me.lblAboutB.Visible = False
@@ -199,10 +194,9 @@ Partial Class frmMain
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Light", 14.25!)
         Me.Label1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label1.Location = New System.Drawing.Point(245, 91)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(184, 74)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(173, 32)
+        Me.Label1.Size = New System.Drawing.Size(136, 25)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Devs In Training"
         '
@@ -211,10 +205,9 @@ Partial Class frmMain
         Me.lblName.AutoSize = True
         Me.lblName.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblName.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblName.Location = New System.Drawing.Point(245, 54)
-        Me.lblName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblName.Location = New System.Drawing.Point(184, 44)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(354, 35)
+        Me.lblName.Size = New System.Drawing.Size(275, 28)
         Me.lblName.TabIndex = 5
         Me.lblName.Text = "Conrad Lim and Charles Pierce"
         '
@@ -224,10 +217,9 @@ Partial Class frmMain
         Me.lblContact.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblContact.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblContact.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblContact.Location = New System.Drawing.Point(409, 229)
-        Me.lblContact.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblContact.Location = New System.Drawing.Point(307, 186)
         Me.lblContact.Name = "lblContact"
-        Me.lblContact.Size = New System.Drawing.Size(100, 23)
+        Me.lblContact.Size = New System.Drawing.Size(79, 18)
         Me.lblContact.TabIndex = 2
         Me.lblContact.Text = "CONTACT"
         '
@@ -237,10 +229,9 @@ Partial Class frmMain
         Me.lblMultimedia.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblMultimedia.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblMultimedia.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblMultimedia.Location = New System.Drawing.Point(259, 229)
-        Me.lblMultimedia.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMultimedia.Location = New System.Drawing.Point(194, 186)
         Me.lblMultimedia.Name = "lblMultimedia"
-        Me.lblMultimedia.Size = New System.Drawing.Size(120, 23)
+        Me.lblMultimedia.Size = New System.Drawing.Size(97, 18)
         Me.lblMultimedia.TabIndex = 2
         Me.lblMultimedia.Text = "MULTIMEDIA"
         '
@@ -250,10 +241,9 @@ Partial Class frmMain
         Me.lblTextA.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblTextA.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblTextA.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTextA.Location = New System.Drawing.Point(159, 229)
-        Me.lblTextA.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTextA.Location = New System.Drawing.Point(119, 186)
         Me.lblTextA.Name = "lblTextA"
-        Me.lblTextA.Size = New System.Drawing.Size(49, 23)
+        Me.lblTextA.Size = New System.Drawing.Size(38, 18)
         Me.lblTextA.TabIndex = 2
         Me.lblTextA.Text = "TEXT"
         '
@@ -263,10 +253,9 @@ Partial Class frmMain
         Me.lblAbout.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblAbout.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblAbout.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblAbout.Location = New System.Drawing.Point(47, 230)
-        Me.lblAbout.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAbout.Location = New System.Drawing.Point(35, 187)
         Me.lblAbout.Name = "lblAbout"
-        Me.lblAbout.Size = New System.Drawing.Size(72, 23)
+        Me.lblAbout.Size = New System.Drawing.Size(57, 18)
         Me.lblAbout.TabIndex = 1
         Me.lblAbout.Text = "ABOUT"
         '
@@ -277,20 +266,18 @@ Partial Class frmMain
         Me.pnlAbout.Controls.Add(Me.Label4)
         Me.pnlAbout.Controls.Add(Me.Label3)
         Me.pnlAbout.Controls.Add(Me.Label2)
-        Me.pnlAbout.Location = New System.Drawing.Point(45, 292)
-        Me.pnlAbout.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlAbout.Location = New System.Drawing.Point(34, 237)
         Me.pnlAbout.Name = "pnlAbout"
-        Me.pnlAbout.Size = New System.Drawing.Size(1175, 334)
+        Me.pnlAbout.Size = New System.Drawing.Size(881, 271)
         Me.pnlAbout.TabIndex = 2
         Me.pnlAbout.Visible = False
         '
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.25!)
-        Me.Label5.Location = New System.Drawing.Point(13, 204)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(10, 166)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(1140, 122)
+        Me.Label5.Size = New System.Drawing.Size(855, 99)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = resources.GetString("Label5.Text")
         '
@@ -299,30 +286,27 @@ Partial Class frmMain
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(24, 28)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(18, 23)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(66, 23)
+        Me.Label4.Size = New System.Drawing.Size(52, 18)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "About"
         '
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.25!)
-        Me.Label3.Location = New System.Drawing.Point(13, 90)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(10, 73)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(1140, 122)
+        Me.Label3.Size = New System.Drawing.Size(855, 99)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = resources.GetString("Label3.Text")
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(-145, 80)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(-109, 65)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(0, 17)
+        Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 0
         '
         'pnlContact
@@ -343,10 +327,9 @@ Partial Class frmMain
         Me.pnlContact.Controls.Add(Me.Label24)
         Me.pnlContact.Controls.Add(Me.Label25)
         Me.pnlContact.Controls.Add(Me.Label27)
-        Me.pnlContact.Location = New System.Drawing.Point(37, 301)
-        Me.pnlContact.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlContact.Location = New System.Drawing.Point(947, 549)
         Me.pnlContact.Name = "pnlContact"
-        Me.pnlContact.Size = New System.Drawing.Size(1175, 334)
+        Me.pnlContact.Size = New System.Drawing.Size(881, 271)
         Me.pnlContact.TabIndex = 33
         Me.pnlContact.Visible = False
         '
@@ -355,10 +338,9 @@ Partial Class frmMain
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Segoe UI", 9.25!, System.Drawing.FontStyle.Bold)
         Me.Label26.ForeColor = System.Drawing.Color.Gray
-        Me.Label26.Location = New System.Drawing.Point(305, 164)
-        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label26.Location = New System.Drawing.Point(229, 133)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(112, 21)
+        Me.Label26.Size = New System.Drawing.Size(88, 17)
         Me.Label26.TabIndex = 23
         Me.Label26.Text = "800-209-9088"
         '
@@ -367,10 +349,9 @@ Partial Class frmMain
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label28.ForeColor = System.Drawing.Color.Gray
-        Me.Label28.Location = New System.Drawing.Point(307, 185)
-        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label28.Location = New System.Drawing.Point(230, 150)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(59, 23)
+        Me.Label28.Size = New System.Drawing.Size(47, 17)
         Me.Label28.TabIndex = 24
         Me.Label28.Text = "Phone"
         '
@@ -379,10 +360,9 @@ Partial Class frmMain
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Segoe UI", 9.25!, System.Drawing.FontStyle.Bold)
         Me.Label20.ForeColor = System.Drawing.Color.Gray
-        Me.Label20.Location = New System.Drawing.Point(700, 106)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Location = New System.Drawing.Point(525, 86)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(83, 21)
+        Me.Label20.Size = New System.Drawing.Size(66, 17)
         Me.Label20.TabIndex = 21
         Me.Label20.Text = "Facebook"
         '
@@ -391,10 +371,9 @@ Partial Class frmMain
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Segoe UI", 9.25!, System.Drawing.FontStyle.Bold)
         Me.Label17.ForeColor = System.Drawing.Color.Gray
-        Me.Label17.Location = New System.Drawing.Point(701, 165)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Location = New System.Drawing.Point(526, 134)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(87, 21)
+        Me.Label17.Size = New System.Drawing.Size(70, 17)
         Me.Label17.TabIndex = 18
         Me.Label17.Text = "Instagram"
         '
@@ -403,10 +382,9 @@ Partial Class frmMain
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Segoe UI", 9.25!, System.Drawing.FontStyle.Bold)
         Me.Label21.ForeColor = System.Drawing.Color.Gray
-        Me.Label21.Location = New System.Drawing.Point(404, 256)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label21.Location = New System.Drawing.Point(303, 208)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(330, 21)
+        Me.Label21.Size = New System.Drawing.Size(268, 17)
         Me.Label21.TabIndex = 15
         Me.Label21.Text = "1570 E Colorado Blvd, Pasadena, CA 91106"
         '
@@ -415,10 +393,9 @@ Partial Class frmMain
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.Gray
-        Me.Label22.Location = New System.Drawing.Point(405, 281)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label22.Location = New System.Drawing.Point(304, 228)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(70, 23)
+        Me.Label22.Size = New System.Drawing.Size(57, 17)
         Me.Label22.TabIndex = 16
         Me.Label22.Text = "Address"
         '
@@ -427,10 +404,9 @@ Partial Class frmMain
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.ForeColor = System.Drawing.Color.Gray
-        Me.Label23.Location = New System.Drawing.Point(305, 106)
-        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label23.Location = New System.Drawing.Point(229, 86)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(191, 25)
+        Me.Label23.Size = New System.Drawing.Size(150, 20)
         Me.Label23.TabIndex = 7
         Me.Label23.Text = "info@animateMe.co"
         '
@@ -439,10 +415,9 @@ Partial Class frmMain
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.Gray
-        Me.Label24.Location = New System.Drawing.Point(307, 130)
-        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label24.Location = New System.Drawing.Point(230, 106)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(51, 23)
+        Me.Label24.Size = New System.Drawing.Size(40, 17)
         Me.Label24.TabIndex = 7
         Me.Label24.Text = "Email"
         '
@@ -451,20 +426,18 @@ Partial Class frmMain
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label25.Location = New System.Drawing.Point(24, 27)
-        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label25.Location = New System.Drawing.Point(18, 22)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(123, 23)
+        Me.Label25.Size = New System.Drawing.Size(98, 18)
         Me.Label25.TabIndex = 3
         Me.Label25.Text = "Contact Info"
         '
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(-145, 80)
-        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label27.Location = New System.Drawing.Point(-109, 65)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(0, 17)
+        Me.Label27.Size = New System.Drawing.Size(0, 13)
         Me.Label27.TabIndex = 0
         '
         'pnlMultimedia
@@ -480,21 +453,60 @@ Partial Class frmMain
         Me.pnlMultimedia.Controls.Add(Me.btnOpenVid)
         Me.pnlMultimedia.Controls.Add(Me.Label36)
         Me.pnlMultimedia.Controls.Add(Me.Label37)
-        Me.pnlMultimedia.Location = New System.Drawing.Point(33, 301)
-        Me.pnlMultimedia.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlMultimedia.Location = New System.Drawing.Point(947, 240)
         Me.pnlMultimedia.Name = "pnlMultimedia"
-        Me.pnlMultimedia.Size = New System.Drawing.Size(1175, 334)
+        Me.pnlMultimedia.Size = New System.Drawing.Size(881, 271)
         Me.pnlMultimedia.TabIndex = 38
         Me.pnlMultimedia.Visible = False
+        '
+        'btnAudioTerminator
+        '
+        Me.btnAudioTerminator.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnAudioTerminator.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAudioTerminator.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.btnAudioTerminator.Location = New System.Drawing.Point(559, 210)
+        Me.btnAudioTerminator.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAudioTerminator.Name = "btnAudioTerminator"
+        Me.btnAudioTerminator.Size = New System.Drawing.Size(260, 50)
+        Me.btnAudioTerminator.TabIndex = 26
+        Me.btnAudioTerminator.Text = "&HASTA LA VISTA"
+        Me.btnAudioTerminator.UseVisualStyleBackColor = False
+        '
+        'btnAudioPacino
+        '
+        Me.btnAudioPacino.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnAudioPacino.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAudioPacino.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.btnAudioPacino.Location = New System.Drawing.Point(560, 155)
+        Me.btnAudioPacino.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAudioPacino.Name = "btnAudioPacino"
+        Me.btnAudioPacino.Size = New System.Drawing.Size(260, 50)
+        Me.btnAudioPacino.TabIndex = 25
+        Me.btnAudioPacino.Text = "COME A&LONG"
+        Me.btnAudioPacino.UseVisualStyleBackColor = False
+        '
+        'btnAudioOffer
+        '
+        Me.btnAudioOffer.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnAudioOffer.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAudioOffer.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.btnAudioOffer.Location = New System.Drawing.Point(560, 101)
+        Me.btnAudioOffer.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAudioOffer.Name = "btnAudioOffer"
+        Me.btnAudioOffer.Size = New System.Drawing.Size(260, 50)
+        Me.btnAudioOffer.TabIndex = 24
+        Me.btnAudioOffer.Text = "&OFFER"
+        Me.btnAudioOffer.UseVisualStyleBackColor = False
         '
         'btnAudioWelcome
         '
         Me.btnAudioWelcome.BackColor = System.Drawing.SystemColors.Menu
         Me.btnAudioWelcome.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAudioWelcome.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.btnAudioWelcome.Location = New System.Drawing.Point(746, 54)
+        Me.btnAudioWelcome.Location = New System.Drawing.Point(560, 44)
+        Me.btnAudioWelcome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnAudioWelcome.Name = "btnAudioWelcome"
-        Me.btnAudioWelcome.Size = New System.Drawing.Size(347, 62)
+        Me.btnAudioWelcome.Size = New System.Drawing.Size(260, 50)
         Me.btnAudioWelcome.TabIndex = 22
         Me.btnAudioWelcome.Text = "&WELCOME"
         Me.btnAudioWelcome.UseVisualStyleBackColor = False
@@ -504,18 +516,18 @@ Partial Class frmMain
         Me.lblAudioPlayer.AutoSize = True
         Me.lblAudioPlayer.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblAudioPlayer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblAudioPlayer.Location = New System.Drawing.Point(865, 24)
-        Me.lblAudioPlayer.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAudioPlayer.Location = New System.Drawing.Point(649, 20)
         Me.lblAudioPlayer.Name = "lblAudioPlayer"
-        Me.lblAudioPlayer.Size = New System.Drawing.Size(109, 23)
+        Me.lblAudioPlayer.Size = New System.Drawing.Size(87, 18)
         Me.lblAudioPlayer.TabIndex = 20
         Me.lblAudioPlayer.Text = "Audio Files"
         '
         'btnCloseMedia
         '
-        Me.btnCloseMedia.Location = New System.Drawing.Point(321, 19)
+        Me.btnCloseMedia.Location = New System.Drawing.Point(241, 15)
+        Me.btnCloseMedia.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnCloseMedia.Name = "btnCloseMedia"
-        Me.btnCloseMedia.Size = New System.Drawing.Size(100, 28)
+        Me.btnCloseMedia.Size = New System.Drawing.Size(75, 23)
         Me.btnCloseMedia.TabIndex = 19
         Me.btnCloseMedia.Text = "&CLOSE"
         Me.btnCloseMedia.UseVisualStyleBackColor = True
@@ -524,7 +536,6 @@ Partial Class frmMain
         '
         Me.AxWindowsMediaPlayer1.Enabled = True
         Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(16, 54)
-        Me.AxWindowsMediaPlayer1.Margin = New System.Windows.Forms.Padding(4)
         Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
         Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
         Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(405, 271)
@@ -532,10 +543,9 @@ Partial Class frmMain
         '
         'btnOpenVid
         '
-        Me.btnOpenVid.Location = New System.Drawing.Point(192, 19)
-        Me.btnOpenVid.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnOpenVid.Location = New System.Drawing.Point(144, 15)
         Me.btnOpenVid.Name = "btnOpenVid"
-        Me.btnOpenVid.Size = New System.Drawing.Size(100, 28)
+        Me.btnOpenVid.Size = New System.Drawing.Size(75, 23)
         Me.btnOpenVid.TabIndex = 17
         Me.btnOpenVid.Text = "&OPEN"
         Me.btnOpenVid.UseVisualStyleBackColor = True
@@ -545,20 +555,18 @@ Partial Class frmMain
         Me.Label36.AutoSize = True
         Me.Label36.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Label36.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label36.Location = New System.Drawing.Point(16, 19)
-        Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label36.Location = New System.Drawing.Point(12, 15)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(128, 23)
+        Me.Label36.Size = New System.Drawing.Size(103, 18)
         Me.Label36.TabIndex = 3
         Me.Label36.Text = "Video Player"
         '
         'Label37
         '
         Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(-145, 80)
-        Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label37.Location = New System.Drawing.Point(-109, 65)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(0, 17)
+        Me.Label37.Size = New System.Drawing.Size(0, 13)
         Me.Label37.TabIndex = 0
         '
         'pnlPosts
@@ -580,10 +588,9 @@ Partial Class frmMain
         Me.pnlPosts.Controls.Add(Me.lblPostOnePost)
         Me.pnlPosts.Controls.Add(Me.lblPostTwoPost)
         Me.pnlPosts.Controls.Add(Me.lblPostThreePost)
-        Me.pnlPosts.Location = New System.Drawing.Point(41, 296)
-        Me.pnlPosts.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlPosts.Location = New System.Drawing.Point(28, 549)
         Me.pnlPosts.Name = "pnlPosts"
-        Me.pnlPosts.Size = New System.Drawing.Size(1175, 334)
+        Me.pnlPosts.Size = New System.Drawing.Size(881, 271)
         Me.pnlPosts.TabIndex = 37
         Me.pnlPosts.Visible = False
         '
@@ -594,10 +601,9 @@ Partial Class frmMain
         Me.lnkPostThree.ForeColor = System.Drawing.Color.DarkBlue
         Me.lnkPostThree.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.lnkPostThree.LinkColor = System.Drawing.Color.DarkBlue
-        Me.lnkPostThree.Location = New System.Drawing.Point(24, 238)
-        Me.lnkPostThree.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lnkPostThree.Location = New System.Drawing.Point(18, 193)
         Me.lnkPostThree.Name = "lnkPostThree"
-        Me.lnkPostThree.Size = New System.Drawing.Size(103, 23)
+        Me.lnkPostThree.Size = New System.Drawing.Size(81, 17)
         Me.lnkPostThree.TabIndex = 18
         Me.lnkPostThree.TabStop = True
         Me.lnkPostThree.Text = "Save To File"
@@ -609,10 +615,9 @@ Partial Class frmMain
         Me.lnkPostTwo.ForeColor = System.Drawing.Color.DarkBlue
         Me.lnkPostTwo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.lnkPostTwo.LinkColor = System.Drawing.Color.DarkBlue
-        Me.lnkPostTwo.Location = New System.Drawing.Point(20, 158)
-        Me.lnkPostTwo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lnkPostTwo.Location = New System.Drawing.Point(15, 128)
         Me.lnkPostTwo.Name = "lnkPostTwo"
-        Me.lnkPostTwo.Size = New System.Drawing.Size(180, 23)
+        Me.lnkPostTwo.Size = New System.Drawing.Size(139, 17)
         Me.lnkPostTwo.TabIndex = 17
         Me.lnkPostTwo.TabStop = True
         Me.lnkPostTwo.Text = "Update My Post: Two"
@@ -622,20 +627,18 @@ Partial Class frmMain
         Me.pnlSaveToFile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlSaveToFile.Controls.Add(Me.btnSaveToFile)
         Me.pnlSaveToFile.Controls.Add(Me.rtbSaveToFile)
-        Me.pnlSaveToFile.Location = New System.Drawing.Point(389, 4)
-        Me.pnlSaveToFile.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlSaveToFile.Location = New System.Drawing.Point(292, 3)
         Me.pnlSaveToFile.Name = "pnlSaveToFile"
-        Me.pnlSaveToFile.Size = New System.Drawing.Size(449, 310)
+        Me.pnlSaveToFile.Size = New System.Drawing.Size(337, 252)
         Me.pnlSaveToFile.TabIndex = 31
         Me.pnlSaveToFile.Visible = False
         '
         'btnSaveToFile
         '
         Me.btnSaveToFile.AutoEllipsis = True
-        Me.btnSaveToFile.Location = New System.Drawing.Point(322, 261)
-        Me.btnSaveToFile.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSaveToFile.Location = New System.Drawing.Point(242, 212)
         Me.btnSaveToFile.Name = "btnSaveToFile"
-        Me.btnSaveToFile.Size = New System.Drawing.Size(100, 28)
+        Me.btnSaveToFile.Size = New System.Drawing.Size(75, 23)
         Me.btnSaveToFile.TabIndex = 16
         Me.btnSaveToFile.Text = "&SAVE"
         Me.btnSaveToFile.UseVisualStyleBackColor = True
@@ -643,10 +646,9 @@ Partial Class frmMain
         'rtbSaveToFile
         '
         Me.rtbSaveToFile.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtbSaveToFile.Location = New System.Drawing.Point(19, 25)
-        Me.rtbSaveToFile.Margin = New System.Windows.Forms.Padding(4)
+        Me.rtbSaveToFile.Location = New System.Drawing.Point(14, 20)
         Me.rtbSaveToFile.Name = "rtbSaveToFile"
-        Me.rtbSaveToFile.Size = New System.Drawing.Size(411, 203)
+        Me.rtbSaveToFile.Size = New System.Drawing.Size(309, 166)
         Me.rtbSaveToFile.TabIndex = 15
         Me.rtbSaveToFile.Text = ""
         '
@@ -657,10 +659,9 @@ Partial Class frmMain
         Me.lblPostOne.ForeColor = System.Drawing.Color.DarkBlue
         Me.lblPostOne.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.lblPostOne.LinkColor = System.Drawing.Color.DarkBlue
-        Me.lblPostOne.Location = New System.Drawing.Point(25, 75)
-        Me.lblPostOne.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPostOne.Location = New System.Drawing.Point(19, 61)
         Me.lblPostOne.Name = "lblPostOne"
-        Me.lblPostOne.Size = New System.Drawing.Size(137, 23)
+        Me.lblPostOne.Size = New System.Drawing.Size(106, 17)
         Me.lblPostOne.TabIndex = 16
         Me.lblPostOne.TabStop = True
         Me.lblPostOne.Text = "Update My Post"
@@ -670,20 +671,18 @@ Partial Class frmMain
         Me.pnlBoxTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlBoxTwo.Controls.Add(Me.btnSaveTwo)
         Me.pnlBoxTwo.Controls.Add(Me.rtbPostTwo)
-        Me.pnlBoxTwo.Location = New System.Drawing.Point(370, 9)
-        Me.pnlBoxTwo.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlBoxTwo.Location = New System.Drawing.Point(278, 7)
         Me.pnlBoxTwo.Name = "pnlBoxTwo"
-        Me.pnlBoxTwo.Size = New System.Drawing.Size(449, 295)
+        Me.pnlBoxTwo.Size = New System.Drawing.Size(337, 240)
         Me.pnlBoxTwo.TabIndex = 29
         Me.pnlBoxTwo.Visible = False
         '
         'btnSaveTwo
         '
         Me.btnSaveTwo.AutoEllipsis = True
-        Me.btnSaveTwo.Location = New System.Drawing.Point(330, 258)
-        Me.btnSaveTwo.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSaveTwo.Location = New System.Drawing.Point(248, 210)
         Me.btnSaveTwo.Name = "btnSaveTwo"
-        Me.btnSaveTwo.Size = New System.Drawing.Size(100, 28)
+        Me.btnSaveTwo.Size = New System.Drawing.Size(75, 23)
         Me.btnSaveTwo.TabIndex = 16
         Me.btnSaveTwo.Text = "SAVE"
         Me.btnSaveTwo.UseVisualStyleBackColor = True
@@ -691,10 +690,9 @@ Partial Class frmMain
         'rtbPostTwo
         '
         Me.rtbPostTwo.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtbPostTwo.Location = New System.Drawing.Point(19, 25)
-        Me.rtbPostTwo.Margin = New System.Windows.Forms.Padding(4)
+        Me.rtbPostTwo.Location = New System.Drawing.Point(14, 20)
         Me.rtbPostTwo.Name = "rtbPostTwo"
-        Me.rtbPostTwo.Size = New System.Drawing.Size(411, 203)
+        Me.rtbPostTwo.Size = New System.Drawing.Size(309, 166)
         Me.rtbPostTwo.TabIndex = 15
         Me.rtbPostTwo.Text = ""
         '
@@ -703,10 +701,9 @@ Partial Class frmMain
         Me.lblDateThree.AutoSize = True
         Me.lblDateThree.Font = New System.Drawing.Font("Segoe UI Light", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDateThree.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblDateThree.Location = New System.Drawing.Point(995, 240)
-        Me.lblDateThree.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDateThree.Location = New System.Drawing.Point(746, 195)
         Me.lblDateThree.Name = "lblDateThree"
-        Me.lblDateThree.Size = New System.Drawing.Size(157, 23)
+        Me.lblDateThree.Size = New System.Drawing.Size(128, 19)
         Me.lblDateThree.TabIndex = 13
         Me.lblDateThree.Text = "1/1/2017 12:01:00 AM"
         '
@@ -715,10 +712,9 @@ Partial Class frmMain
         Me.lblDateTwo.AutoSize = True
         Me.lblDateTwo.Font = New System.Drawing.Font("Segoe UI Light", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDateTwo.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblDateTwo.Location = New System.Drawing.Point(997, 159)
-        Me.lblDateTwo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDateTwo.Location = New System.Drawing.Point(748, 129)
         Me.lblDateTwo.Name = "lblDateTwo"
-        Me.lblDateTwo.Size = New System.Drawing.Size(156, 23)
+        Me.lblDateTwo.Size = New System.Drawing.Size(127, 19)
         Me.lblDateTwo.TabIndex = 10
         Me.lblDateTwo.Text = "2/1/2017 7:45:35 AM"
         '
@@ -727,10 +723,9 @@ Partial Class frmMain
         Me.lblPostTwo.AutoSize = True
         Me.lblPostTwo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPostTwo.ForeColor = System.Drawing.Color.DarkBlue
-        Me.lblPostTwo.Location = New System.Drawing.Point(21, 158)
-        Me.lblPostTwo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPostTwo.Location = New System.Drawing.Point(16, 128)
         Me.lblPostTwo.Name = "lblPostTwo"
-        Me.lblPostTwo.Size = New System.Drawing.Size(133, 23)
+        Me.lblPostTwo.Size = New System.Drawing.Size(102, 17)
         Me.lblPostTwo.TabIndex = 9
         Me.lblPostTwo.Text = "Smooth Sailing"
         '
@@ -739,10 +734,9 @@ Partial Class frmMain
         Me.lblDateOne.AutoSize = True
         Me.lblDateOne.Font = New System.Drawing.Font("Segoe UI Light", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDateOne.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblDateOne.Location = New System.Drawing.Point(999, 76)
-        Me.lblDateOne.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDateOne.Location = New System.Drawing.Point(749, 62)
         Me.lblDateOne.Name = "lblDateOne"
-        Me.lblDateOne.Size = New System.Drawing.Size(158, 23)
+        Me.lblDateOne.Size = New System.Drawing.Size(129, 19)
         Me.lblDateOne.TabIndex = 7
         Me.lblDateOne.Text = "3/1/2017 10:21:02 PM"
         '
@@ -751,10 +745,9 @@ Partial Class frmMain
         Me.lblPostOness.AutoSize = True
         Me.lblPostOness.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPostOness.ForeColor = System.Drawing.Color.DarkBlue
-        Me.lblPostOness.Location = New System.Drawing.Point(23, 75)
-        Me.lblPostOness.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPostOness.Location = New System.Drawing.Point(17, 61)
         Me.lblPostOness.Name = "lblPostOness"
-        Me.lblPostOness.Size = New System.Drawing.Size(134, 23)
+        Me.lblPostOness.Size = New System.Drawing.Size(104, 17)
         Me.lblPostOness.TabIndex = 7
         Me.lblPostOness.Text = "March Madness"
         '
@@ -763,20 +756,18 @@ Partial Class frmMain
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(24, 27)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(18, 22)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(97, 23)
+        Me.Label7.Size = New System.Drawing.Size(74, 18)
         Me.Label7.TabIndex = 3
         Me.Label7.Text = "Text Posts"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(-145, 80)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(-109, 65)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(0, 17)
+        Me.Label9.Size = New System.Drawing.Size(0, 13)
         Me.Label9.TabIndex = 0
         '
         'pnlBoxPostOne
@@ -785,10 +776,9 @@ Partial Class frmMain
         Me.pnlBoxPostOne.Controls.Add(Me.btnSavePostOne)
         Me.pnlBoxPostOne.Controls.Add(Me.rtbPostOne)
         Me.pnlBoxPostOne.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlBoxPostOne.Location = New System.Drawing.Point(375, 4)
-        Me.pnlBoxPostOne.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlBoxPostOne.Location = New System.Drawing.Point(281, 3)
         Me.pnlBoxPostOne.Name = "pnlBoxPostOne"
-        Me.pnlBoxPostOne.Size = New System.Drawing.Size(461, 315)
+        Me.pnlBoxPostOne.Size = New System.Drawing.Size(346, 256)
         Me.pnlBoxPostOne.TabIndex = 30
         Me.pnlBoxPostOne.Visible = False
         '
@@ -796,40 +786,36 @@ Partial Class frmMain
         '
         Me.btnSavePostOne.AutoEllipsis = True
         Me.btnSavePostOne.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSavePostOne.Location = New System.Drawing.Point(330, 266)
-        Me.btnSavePostOne.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSavePostOne.Location = New System.Drawing.Point(248, 216)
         Me.btnSavePostOne.Name = "btnSavePostOne"
-        Me.btnSavePostOne.Size = New System.Drawing.Size(100, 28)
+        Me.btnSavePostOne.Size = New System.Drawing.Size(75, 23)
         Me.btnSavePostOne.TabIndex = 16
         Me.btnSavePostOne.Text = "&SAVE"
         Me.btnSavePostOne.UseVisualStyleBackColor = True
         '
         'rtbPostOne
         '
-        Me.rtbPostOne.Location = New System.Drawing.Point(19, 25)
-        Me.rtbPostOne.Margin = New System.Windows.Forms.Padding(4)
+        Me.rtbPostOne.Location = New System.Drawing.Point(14, 20)
         Me.rtbPostOne.Name = "rtbPostOne"
-        Me.rtbPostOne.Size = New System.Drawing.Size(411, 203)
+        Me.rtbPostOne.Size = New System.Drawing.Size(309, 166)
         Me.rtbPostOne.TabIndex = 15
         Me.rtbPostOne.Text = ""
         '
         'lblPostOnePost
         '
         Me.lblPostOnePost.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPostOnePost.Location = New System.Drawing.Point(52, 100)
-        Me.lblPostOnePost.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPostOnePost.Location = New System.Drawing.Point(39, 81)
         Me.lblPostOnePost.Name = "lblPostOnePost"
-        Me.lblPostOnePost.Size = New System.Drawing.Size(1101, 54)
+        Me.lblPostOnePost.Size = New System.Drawing.Size(826, 44)
         Me.lblPostOnePost.TabIndex = 2
         Me.lblPostOnePost.Text = "You can change this text."
         '
         'lblPostTwoPost
         '
         Me.lblPostTwoPost.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPostTwoPost.Location = New System.Drawing.Point(51, 182)
-        Me.lblPostTwoPost.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPostTwoPost.Location = New System.Drawing.Point(38, 148)
         Me.lblPostTwoPost.Name = "lblPostTwoPost"
-        Me.lblPostTwoPost.Size = New System.Drawing.Size(1101, 54)
+        Me.lblPostTwoPost.Size = New System.Drawing.Size(826, 44)
         Me.lblPostTwoPost.TabIndex = 8
         Me.lblPostTwoPost.Text = "Did you notice the date and time updated after you saved the previous changes? Tr" &
     "y it again."
@@ -837,10 +823,9 @@ Partial Class frmMain
         'lblPostThreePost
         '
         Me.lblPostThreePost.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPostThreePost.Location = New System.Drawing.Point(48, 261)
-        Me.lblPostThreePost.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPostThreePost.Location = New System.Drawing.Point(36, 212)
         Me.lblPostThreePost.Name = "lblPostThreePost"
-        Me.lblPostThreePost.Size = New System.Drawing.Size(1101, 54)
+        Me.lblPostThreePost.Size = New System.Drawing.Size(826, 44)
         Me.lblPostThreePost.TabIndex = 11
         Me.lblPostThreePost.Text = "Clicking the Save To File label gives you the ability to save changes made here t" &
     "o an external document."
@@ -853,49 +838,12 @@ Partial Class frmMain
         '
         Me.OpenFileDialogAudio.FileName = "OpenFileDialog2"
         '
-        'btnAudioOffer
-        '
-        Me.btnAudioOffer.BackColor = System.Drawing.SystemColors.Menu
-        Me.btnAudioOffer.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAudioOffer.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.btnAudioOffer.Location = New System.Drawing.Point(746, 124)
-        Me.btnAudioOffer.Name = "btnAudioOffer"
-        Me.btnAudioOffer.Size = New System.Drawing.Size(347, 61)
-        Me.btnAudioOffer.TabIndex = 24
-        Me.btnAudioOffer.Text = "&OFFER"
-        Me.btnAudioOffer.UseVisualStyleBackColor = False
-        '
-        'btnAudioPacino
-        '
-        Me.btnAudioPacino.BackColor = System.Drawing.SystemColors.Menu
-        Me.btnAudioPacino.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAudioPacino.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.btnAudioPacino.Location = New System.Drawing.Point(746, 191)
-        Me.btnAudioPacino.Name = "btnAudioPacino"
-        Me.btnAudioPacino.Size = New System.Drawing.Size(347, 61)
-        Me.btnAudioPacino.TabIndex = 25
-        Me.btnAudioPacino.Text = "COME A&LONG"
-        Me.btnAudioPacino.UseVisualStyleBackColor = False
-        '
-        'btnAudioTerminator
-        '
-        Me.btnAudioTerminator.BackColor = System.Drawing.SystemColors.Menu
-        Me.btnAudioTerminator.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAudioTerminator.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.btnAudioTerminator.Location = New System.Drawing.Point(745, 258)
-        Me.btnAudioTerminator.Name = "btnAudioTerminator"
-        Me.btnAudioTerminator.Size = New System.Drawing.Size(347, 61)
-        Me.btnAudioTerminator.TabIndex = 26
-        Me.btnAudioTerminator.Text = "&HASTA LA VISTA"
-        Me.btnAudioTerminator.UseVisualStyleBackColor = False
-        '
         'picBCP
         '
         Me.picBCP.Image = Global._0307_Lab2.My.Resources.Resources.CP_profile_thumb
-        Me.picBCP.Location = New System.Drawing.Point(141, 54)
-        Me.picBCP.Margin = New System.Windows.Forms.Padding(4)
+        Me.picBCP.Location = New System.Drawing.Point(106, 44)
         Me.picBCP.Name = "picBCP"
-        Me.picBCP.Size = New System.Drawing.Size(83, 82)
+        Me.picBCP.Size = New System.Drawing.Size(62, 67)
         Me.picBCP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picBCP.TabIndex = 4
         Me.picBCP.TabStop = False
@@ -903,10 +851,9 @@ Partial Class frmMain
         'picbCL
         '
         Me.picbCL.Image = Global._0307_Lab2.My.Resources.Resources.CL_profile_thumb
-        Me.picbCL.Location = New System.Drawing.Point(51, 54)
-        Me.picbCL.Margin = New System.Windows.Forms.Padding(4)
+        Me.picbCL.Location = New System.Drawing.Point(38, 44)
         Me.picbCL.Name = "picbCL"
-        Me.picbCL.Size = New System.Drawing.Size(83, 82)
+        Me.picbCL.Size = New System.Drawing.Size(62, 67)
         Me.picbCL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picbCL.TabIndex = 3
         Me.picbCL.TabStop = False
@@ -914,70 +861,63 @@ Partial Class frmMain
         'PictureBox4
         '
         Me.PictureBox4.Image = Global._0307_Lab2.My.Resources.Resources.smartphone
-        Me.PictureBox4.Location = New System.Drawing.Point(268, 165)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox4.Location = New System.Drawing.Point(201, 134)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(43, 37)
+        Me.PictureBox4.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox4.TabIndex = 25
         Me.PictureBox4.TabStop = False
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = Global._0307_Lab2.My.Resources.Resources.facebook_logo_button
-        Me.PictureBox3.Location = New System.Drawing.Point(653, 100)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox3.Location = New System.Drawing.Point(490, 81)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(43, 37)
+        Me.PictureBox3.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox3.TabIndex = 22
         Me.PictureBox3.TabStop = False
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global._0307_Lab2.My.Resources.Resources.instagram
-        Me.PictureBox2.Location = New System.Drawing.Point(653, 159)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.Location = New System.Drawing.Point(490, 129)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(43, 37)
+        Me.PictureBox2.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox2.TabIndex = 20
         Me.PictureBox2.TabStop = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global._0307_Lab2.My.Resources.Resources.placeholder
-        Me.PictureBox1.Location = New System.Drawing.Point(367, 261)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Location = New System.Drawing.Point(275, 212)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(43, 37)
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox1.TabIndex = 17
         Me.PictureBox1.TabStop = False
         '
         'picBEmail
         '
         Me.picBEmail.Image = Global._0307_Lab2.My.Resources.Resources.email
-        Me.picBEmail.Location = New System.Drawing.Point(269, 105)
-        Me.picBEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.picBEmail.Location = New System.Drawing.Point(202, 85)
         Me.picBEmail.Name = "picBEmail"
-        Me.picBEmail.Size = New System.Drawing.Size(43, 37)
+        Me.picBEmail.Size = New System.Drawing.Size(32, 30)
         Me.picBEmail.TabIndex = 14
         Me.picBEmail.TabStop = False
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1256, 681)
+        Me.ClientSize = New System.Drawing.Size(1744, 821)
         Me.Controls.Add(Me.pnlMultimedia)
         Me.Controls.Add(Me.pnlProfile)
         Me.Controls.Add(Me.pnlPosts)
         Me.Controls.Add(Me.pnlContact)
         Me.Controls.Add(Me.pnlAbout)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(1274, 1097)
+        Me.MaximumSize = New System.Drawing.Size(1960, 2200)
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(1274, 681)
+        Me.MinimumSize = New System.Drawing.Size(960, 561)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hello World"

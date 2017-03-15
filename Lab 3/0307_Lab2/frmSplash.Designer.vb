@@ -38,10 +38,9 @@ Partial Class frmSplash
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(19, 12)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(14, 10)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(0, 17)
+        Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 1
         '
         'pbSplashImage
@@ -49,8 +48,7 @@ Partial Class frmSplash
         Me.pbSplashImage.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.pbSplashImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.pbSplashImage.Image = Global._0307_Lab2.My.Resources.Resources.flask
-        Me.pbSplashImage.Location = New System.Drawing.Point(-4, 0)
-        Me.pbSplashImage.Margin = New System.Windows.Forms.Padding(4)
+        Me.pbSplashImage.Location = New System.Drawing.Point(-105, -39)
         Me.pbSplashImage.Name = "pbSplashImage"
         Me.pbSplashImage.Size = New System.Drawing.Size(800, 600)
         Me.pbSplashImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -59,15 +57,15 @@ Partial Class frmSplash
         '
         'frmSplash
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(789, 600)
+        Me.ClientSize = New System.Drawing.Size(592, 488)
         Me.Controls.Add(Me.pbSplashImage)
         Me.Controls.Add(Me.Label2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmSplash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         CType(Me.pbSplashImage, System.ComponentModel.ISupportInitialize).EndInit()

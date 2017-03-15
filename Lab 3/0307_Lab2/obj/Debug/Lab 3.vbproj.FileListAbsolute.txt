@@ -14,3 +14,21 @@ C:\Users\Charlie\Downloads\VB-lab2-brach1\VB-lab2.2\Lab2.2 - Update at 3pm\0307_
 C:\Users\Charlie\Downloads\VB-lab2-brach1\VB-lab2.2\Lab2.2 - Update at 3pm\0307_Lab2\obj\Debug\_0307_Lab2.frmMain.resources
 C:\Users\Charlie\Downloads\VB-lab2-brach1\VB-lab2.2\Lab2.2 - Update at 3pm\0307_Lab2\obj\Debug\_0307_Lab2.frmSplash.resources
 C:\Users\Charlie\Downloads\VB-lab2-brach1\VB-lab2.2\Lab2.2 - Update at 3pm\0307_Lab2\obj\Debug\_0307_Lab2.Resources.resources
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\bin\Debug\0307_Lab2.2.exe.config
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\Interop.WMPLib.dll
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\Lab 3.vbproj.ResolveComReference.cache
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\0307_Lab2.2.exe
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\0307_Lab2.2.xml
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\0307_Lab2.2.pdb
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\bin\Debug\0307_Lab2.2.exe
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\bin\Debug\0307_Lab2.2.pdb
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\bin\Debug\0307_Lab2.2.xml
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\bin\Debug\Interop.WMPLib.dll
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\Lab 3.vbprojResolveAssemblyReference.cache
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\_0307_Lab2.frmMain.resources
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\_0307_Lab2.frmSplash.resources
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\_0307_Lab2.Resources.resources
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\Lab 3.vbproj.GenerateResource.Cache
+C:\Users\clim16\Desktop\VB-lab2-master\Lab 3\0307_Lab2\obj\Debug\_0307_Lab2.LoginForm1.resources

@@ -2,6 +2,9 @@
 '      Lab 3 -  Multimedia // 03.14.17
 '      Conrad Lim and Charlie Pierce
 '      Advanced Visual Basic - Prof.Flores
+
+'                   PANEL LOCATION: 25, 245
+'                   WINDOW SIZE :  960, 817
 '   *******************************************
 
 Imports System.Media
@@ -29,6 +32,16 @@ Public Class frmMain
         gp2.AddArc(r2.X, r2.Y + r2.Height - d2, d2, d2, 90, 90)
         picBCP.Region = New Region(gp)
         Me.Opacity = 0.99
+
+        ' resize form on load
+        Me.Size = New Size(960, 817)
+
+        ' resize panel location on load
+        pnlMultimedia.Location = New Point(25, 245)
+        pnlAbout.Location = New Point(25, 245)
+        pnlContact.Location = New Point(25, 245)
+        pnlPosts.Location = New Point(25, 245)
+
     End Sub
 
     Private Sub FadingForm()
